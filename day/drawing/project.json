@@ -46,6 +46,9 @@
     "diagramLayerColors": false,
     "pictogramLayerColors": false,
     "wireframeTriangles": false,
+    "pens": {},
+    "penScale": 7.5,
+    "outlineStep": 0.15,
     "modePresets": {
       "collage": {
         "edgeWidth": 1.3
@@ -101,7 +104,9 @@
         "color": "#ded7c8",
         "opacity": 1
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "gravel",
@@ -118,7 +123,9 @@
           "repeat": 2
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "meadow",
@@ -135,7 +142,9 @@
           "repeat": 1
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "crate-walls",
@@ -157,7 +166,9 @@
           "intensity": 0.32
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crates",
@@ -174,7 +185,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crate-stack",
@@ -188,14 +201,21 @@
         "texture": {
           "pattern": "none",
           "file": "textures/crate-stack-atlas.png",
-          "repeat": 1
+          "repeat": 1,
+          "hatch": "textures/crate-hatch.svg",
+          "hatchSize": [
+            0.395,
+            0.259
+          ]
         },
         "glow": {
           "color": "#ffffff",
           "intensity": 0.2
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "crate-wall-static",
@@ -212,7 +232,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crates-loose",
@@ -229,7 +251,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crate-courses",
@@ -246,7 +270,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "pallet",
@@ -263,7 +289,9 @@
           "repeat": 1
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "doors",
@@ -285,7 +313,9 @@
           ]
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "plinth",
@@ -308,7 +338,9 @@
           "align": "long-axis"
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": true
     },
     {
       "id": "packing-blocks",
@@ -321,7 +353,9 @@
         "color": "#6f5844",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "door-frames",
@@ -334,7 +368,9 @@
         "color": "#45423f",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "door-hardware",
@@ -347,7 +383,9 @@
         "color": "#a9a8a2",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "lintels",
@@ -360,7 +398,9 @@
         "color": "#4d4c48",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "roof",
@@ -383,7 +423,9 @@
           "align": "long-axis"
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": true
     },
     {
       "id": "roof-edge",
@@ -396,7 +438,9 @@
         "color": "#b4b8b4",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "ceiling-frame",
@@ -409,7 +453,9 @@
         "color": "#3e3e3b",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "spots",
@@ -422,7 +468,9 @@
         "color": "#34342f",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "floor",
@@ -439,7 +487,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "floor-joists",
@@ -456,7 +506,9 @@
           "repeat": 1
         }
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "furniture",
@@ -473,7 +525,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "sleepers",
@@ -490,7 +544,9 @@
           "repeat": 1
         }
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "ground-anchors",
@@ -503,7 +559,9 @@
         "color": "#6d6e70",
         "opacity": 1
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "tie-rods",
@@ -516,7 +574,9 @@
         "color": "#55595e",
         "opacity": 1
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "clamp-plates",
@@ -529,7 +589,9 @@
         "color": "#7b7f84",
         "opacity": 1
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "fine",
+      "contour": false
     }
   ],
   "billboards": [
@@ -1638,7 +1700,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-a-1",
@@ -1656,7 +1722,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-b-1",
@@ -1674,7 +1744,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-c-1",
@@ -1703,7 +1777,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-d-1",
@@ -1732,7 +1810,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
+    },
+    {
+      "id": "tree-e-1",
+      "file": "trees/a-poplar-7.svg",
+      "planFile": "trees/a-poplar-7-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 9.86,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-2",
@@ -1750,7 +1850,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 11.4
+      }
     },
     {
       "id": "tree-a-2",
@@ -1768,7 +1872,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 11.4
+      }
     },
     {
       "id": "tree-b-2",
@@ -1786,7 +1894,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 11.4
+      }
     },
     {
       "id": "tree-c-2",
@@ -1815,7 +1927,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 11.4
+      }
     },
     {
       "id": "tree-d-2",
@@ -1844,7 +1960,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 11.4
+      }
+    },
+    {
+      "id": "tree-e-2",
+      "file": "trees/a-poplar-11.svg",
+      "planFile": "trees/a-poplar-11-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.13,
+      "height": 19,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-3",
@@ -1862,7 +2000,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.6
+      }
     },
     {
       "id": "tree-a-3",
@@ -1880,7 +2022,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.6
+      }
     },
     {
       "id": "tree-b-3",
@@ -1898,7 +2044,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.6
+      }
     },
     {
       "id": "tree-c-3",
@@ -1927,7 +2077,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.6
+      }
     },
     {
       "id": "tree-d-3",
@@ -1956,7 +2110,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.6
+      }
+    },
+    {
+      "id": "tree-e-3",
+      "file": "trees/a-poplar-19.svg",
+      "planFile": "trees/a-poplar-19-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 11.01,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-4",
@@ -1974,7 +2150,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.63
+      }
     },
     {
       "id": "tree-a-4",
@@ -1992,7 +2172,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.63
+      }
     },
     {
       "id": "tree-b-4",
@@ -2010,7 +2194,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.63
+      }
     },
     {
       "id": "tree-c-4",
@@ -2039,7 +2227,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.63
+      }
     },
     {
       "id": "tree-d-4",
@@ -2068,7 +2260,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.63
+      }
+    },
+    {
+      "id": "tree-e-4",
+      "file": "trees/a-poplar-23.svg",
+      "planFile": "trees/a-poplar-23-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.81,
+      "height": 17.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-5",
@@ -2086,7 +2300,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.8
+      }
     },
     {
       "id": "tree-a-5",
@@ -2104,7 +2322,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.8
+      }
     },
     {
       "id": "tree-b-5",
@@ -2122,7 +2344,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.8
+      }
     },
     {
       "id": "tree-c-5",
@@ -2151,7 +2377,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.8
+      }
     },
     {
       "id": "tree-d-5",
@@ -2180,7 +2410,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.8
+      }
+    },
+    {
+      "id": "tree-e-5",
+      "file": "trees/a-poplar-3.svg",
+      "planFile": "trees/a-poplar-3-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 10.2,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-6",
@@ -2198,7 +2450,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 10.72
+      }
     },
     {
       "id": "tree-a-6",
@@ -2216,7 +2472,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 10.72
+      }
     },
     {
       "id": "tree-b-6",
@@ -2234,7 +2494,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 10.72
+      }
     },
     {
       "id": "tree-c-6",
@@ -2263,7 +2527,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 10.72
+      }
     },
     {
       "id": "tree-d-6",
@@ -2292,7 +2560,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 10.72
+      }
+    },
+    {
+      "id": "tree-e-6",
+      "file": "trees/a-poplar-31.svg",
+      "planFile": "trees/a-poplar-31-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 10.19,
+      "height": 16.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-7",
@@ -2310,7 +2600,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-a-7",
@@ -2328,7 +2622,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-b-7",
@@ -2346,7 +2644,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-c-7",
@@ -2375,7 +2677,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
     },
     {
       "id": "tree-d-7",
@@ -2404,7 +2710,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 12.75
+      }
+    },
+    {
+      "id": "tree-e-7",
+      "file": "trees/a-poplar-19.svg",
+      "planFile": "trees/a-poplar-19-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 10.4,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-8",
@@ -2422,7 +2750,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.3
+      }
     },
     {
       "id": "tree-a-8",
@@ -2440,7 +2772,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.3
+      }
     },
     {
       "id": "tree-b-8",
@@ -2458,7 +2794,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.3
+      }
     },
     {
       "id": "tree-c-8",
@@ -2487,7 +2827,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.3
+      }
     },
     {
       "id": "tree-d-8",
@@ -2516,7 +2860,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.3
+      }
+    },
+    {
+      "id": "tree-e-8",
+      "file": "trees/a-poplar-11.svg",
+      "planFile": "trees/a-poplar-11-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 9.89,
+      "height": 15.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-9",
@@ -2534,7 +2900,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 11.2
+      }
     },
     {
       "id": "tree-a-9",
@@ -2552,7 +2922,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 11.2
+      }
     },
     {
       "id": "tree-b-9",
@@ -2570,7 +2944,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 11.2
+      }
     },
     {
       "id": "tree-c-9",
@@ -2599,7 +2977,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 11.2
+      }
     },
     {
       "id": "tree-d-9",
@@ -2628,7 +3010,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 11.2
+      }
+    },
+    {
+      "id": "tree-e-9",
+      "file": "trees/a-poplar-7.svg",
+      "planFile": "trees/a-poplar-7-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.28,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-10",
@@ -2646,7 +3050,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.9
+      }
     },
     {
       "id": "tree-a-10",
@@ -2664,7 +3072,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.9
+      }
     },
     {
       "id": "tree-b-10",
@@ -2682,7 +3094,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.9
+      }
     },
     {
       "id": "tree-c-10",
@@ -2711,7 +3127,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.9
+      }
     },
     {
       "id": "tree-d-10",
@@ -2740,7 +3160,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-01.svg",
+        "height": 9.9
+      }
+    },
+    {
+      "id": "tree-e-10",
+      "file": "trees/a-poplar-23.svg",
+      "planFile": "trees/a-poplar-23-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 11.12,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "tree-poplar-11",
@@ -2758,7 +3200,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "poplar"
+      "variant": "poplar",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 13.6
+      }
     },
     {
       "id": "tree-a-11",
@@ -2776,7 +3222,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "a"
+      "variant": "a",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 13.6
+      }
     },
     {
       "id": "tree-b-11",
@@ -2794,7 +3244,11 @@
       "opacity": 1,
       "kind": "tree",
       "shadow": true,
-      "variant": "b"
+      "variant": "b",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 13.6
+      }
     },
     {
       "id": "tree-c-11",
@@ -2823,7 +3277,11 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "c"
+      "variant": "c",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 13.6
+      }
     },
     {
       "id": "tree-d-11",
@@ -2852,7 +3310,29 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
-      "variant": "d"
+      "variant": "d",
+      "line": {
+        "file": "staffage-lines/trees/columnar-03.svg",
+        "height": 13.6
+      }
+    },
+    {
+      "id": "tree-e-11",
+      "file": "trees/a-poplar-31.svg",
+      "planFile": "trees/a-poplar-31-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 10.5,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "e"
     },
     {
       "id": "person-a",
@@ -2885,7 +3365,11 @@
         "source": "Collected",
         "license": "See preserved source documentation"
       },
-      "shadow": true
+      "shadow": true,
+      "line": {
+        "file": "staffage-lines/people/walk-01.svg",
+        "height": 1.658
+      }
     },
     {
       "id": "person-b",
@@ -2919,6 +3403,10 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
+      "line": {
+        "file": "staffage-lines/people/stand-02.svg",
+        "height": 1.774
+      },
       "tone": {
         "ramp": [
           "#563c29",
@@ -2966,6 +3454,10 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
+      "line": {
+        "file": "staffage-lines/people/walk-04.svg",
+        "height": 1.77
+      },
       "tone": {
         "ramp": [
           "#563c29",
@@ -3013,6 +3505,10 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
+      "line": {
+        "file": "staffage-lines/people/walk-03.svg",
+        "height": 1.659
+      },
       "tone": {
         "ramp": [
           "#563c29",
@@ -3060,6 +3556,10 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
+      "line": {
+        "file": "staffage-lines/people/stand-05.svg",
+        "height": 1.66
+      },
       "tone": {
         "ramp": [
           "#563c29",
@@ -3107,6 +3607,10 @@
         "license": "See preserved source documentation"
       },
       "shadow": true,
+      "line": {
+        "file": "staffage-lines/people/walk-06.svg",
+        "height": 1.787
+      },
       "tone": {
         "ramp": [
           "#563c29",
@@ -3193,6 +3697,9 @@
     },
     "d": {
       "label": "D Pastel"
+    },
+    "e": {
+      "label": "E Drawn poplars (lines)"
     }
   },
   "variant": "a",

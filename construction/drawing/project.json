@@ -46,6 +46,9 @@
     "diagramLayerColors": false,
     "pictogramLayerColors": false,
     "wireframeTriangles": false,
+    "pens": {},
+    "penScale": 7.5,
+    "outlineStep": 0.15,
     "modePresets": {
       "collage": {
         "edgeWidth": 1.3
@@ -117,7 +120,9 @@
         "color": "#ded7c8",
         "opacity": 1
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "gravel",
@@ -134,7 +139,9 @@
           "repeat": 2
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "meadow",
@@ -151,7 +158,9 @@
           "repeat": 1
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "crate-walls",
@@ -168,7 +177,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crates",
@@ -185,7 +196,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crate-stack",
@@ -199,10 +212,17 @@
         "texture": {
           "pattern": "none",
           "file": "textures/crate-stack-atlas.png",
-          "repeat": 1
+          "repeat": 1,
+          "hatch": "textures/crate-hatch.svg",
+          "hatchSize": [
+            0.395,
+            0.259
+          ]
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "crate-wall-static",
@@ -219,7 +239,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crates-loose",
@@ -240,7 +262,9 @@
           "intensity": 0.3
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "crate-courses",
@@ -261,7 +285,9 @@
           "intensity": 0.3
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "pallet",
@@ -278,7 +304,9 @@
           "repeat": 1
         }
       },
-      "group": "Site"
+      "group": "Site",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "doors",
@@ -300,7 +328,9 @@
           ]
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "plinth",
@@ -323,7 +353,9 @@
           "align": "long-axis"
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": true
     },
     {
       "id": "packing-blocks",
@@ -336,7 +368,9 @@
         "color": "#6f5844",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "door-frames",
@@ -349,7 +383,9 @@
         "color": "#45423f",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "door-hardware",
@@ -362,7 +398,9 @@
         "color": "#a9a8a2",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "lintels",
@@ -375,7 +413,9 @@
         "color": "#4d4c48",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "roof",
@@ -398,7 +438,9 @@
           "align": "long-axis"
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": true
     },
     {
       "id": "roof-edge",
@@ -411,7 +453,9 @@
         "color": "#b4b8b4",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": true
     },
     {
       "id": "ceiling-frame",
@@ -424,7 +468,9 @@
         "color": "#3e3e3b",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "spots",
@@ -437,7 +483,9 @@
         "color": "#34342f",
         "opacity": 1
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "floor",
@@ -454,7 +502,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "floor-joists",
@@ -471,7 +521,9 @@
           "repeat": 1
         }
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "furniture",
@@ -488,7 +540,9 @@
           "repeat": 1
         }
       },
-      "group": "Building"
+      "group": "Building",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "sleepers",
@@ -505,7 +559,9 @@
           "repeat": 1
         }
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "edge",
+      "contour": false
     },
     {
       "id": "ground-anchors",
@@ -518,7 +574,9 @@
         "color": "#6d6e70",
         "opacity": 1
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "tie-rods",
@@ -531,7 +589,9 @@
         "color": "#55595e",
         "opacity": 1
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "fine",
+      "contour": false
     },
     {
       "id": "clamp-plates",
@@ -544,7 +604,9 @@
         "color": "#7b7f84",
         "opacity": 1
       },
-      "group": "Structure"
+      "group": "Structure",
+      "pen": "fine",
+      "contour": false
     }
   ],
   "billboards": [],
