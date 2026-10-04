@@ -197,17 +197,13 @@
       "select": {
         "layer": "Crates"
       },
-      "visible": true,
+      "visible": false,
       "material": {
         "opacity": 1,
         "texture": {
           "pattern": "none",
           "file": "textures/crate-stack-atlas.png",
           "repeat": 1
-        },
-        "glow": {
-          "color": "#fff4e6",
-          "intensity": 0.4
         }
       },
       "group": "Building"
@@ -252,13 +248,38 @@
       "select": {
         "layer": "Crates loose"
       },
-      "visible": false,
+      "visible": true,
       "material": {
         "opacity": 1,
         "texture": {
           "pattern": "none",
           "file": "textures/crate-stack-atlas.png",
           "repeat": 1
+        },
+        "glow": {
+          "color": "#fff4e6",
+          "intensity": 0.4
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crate-courses",
+      "label": "Crate courses",
+      "select": {
+        "layer": "Crate courses"
+      },
+      "visible": true,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        },
+        "glow": {
+          "color": "#fff4e6",
+          "intensity": 0.4
         }
       },
       "group": "Building"
@@ -288,26 +309,15 @@
       },
       "visible": true,
       "material": {
-        "color": "#e9cfb6",
+        "color": "#ffffff",
         "opacity": 1,
         "texture": {
           "pattern": "none",
-          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
-          "repeat": 4,
-          "library": {
-            "catalog": "arch-textures",
-            "itemId": "arch-textures:9125",
-            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
-            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
-            "title": "Thick Mild steel CorTen",
-            "category": "Materials",
-            "style": "Metal",
-            "source": "Arch-Textures",
-            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
-          },
+          "file": "textures/door-steel.png",
+          "repeat": 1,
           "size": [
-            0.25,
-            0.31282586027111575
+            0.8,
+            1.6
           ]
         }
       },
@@ -321,27 +331,17 @@
       },
       "visible": true,
       "material": {
-        "color": "#f0d2b4",
+        "color": "#ffffff",
         "opacity": 1,
         "texture": {
           "pattern": "none",
-          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
-          "repeat": 4,
-          "library": {
-            "catalog": "arch-textures",
-            "itemId": "arch-textures:9125",
-            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
-            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
-            "title": "Thick Mild steel CorTen",
-            "category": "Materials",
-            "style": "Metal",
-            "source": "Arch-Textures",
-            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
-          },
+          "file": "textures/channel-rust.png",
+          "repeat": 1,
           "size": [
-            0.25,
-            0.31282586027111575
-          ]
+            0.8,
+            0.2
+          ],
+          "align": "long-axis"
         }
       },
       "group": "Building"
@@ -354,7 +354,7 @@
       },
       "visible": true,
       "material": {
-        "color": "#43423e",
+        "color": "#45423f",
         "opacity": 1
       },
       "group": "Building"
@@ -558,14 +558,24 @@
       "id": "cut-away-1",
       "label": "Cut away: south wall",
       "select": {
-        "layer": "Crates",
-        "name": "Course * S*"
+        "layer": "Crate courses",
+        "name": "Course * S"
       },
       "visible": false,
       "group": "Cut away"
     },
     {
       "id": "cut-away-2",
+      "label": "Cut away: south wall, loose crates",
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course * S*"
+      },
+      "visible": false,
+      "group": "Cut away"
+    },
+    {
+      "id": "cut-away-3",
       "label": "Cut away: Frame S",
       "select": {
         "layer": "Door frames",
@@ -575,7 +585,7 @@
       "group": "Cut away"
     },
     {
-      "id": "cut-away-3",
+      "id": "cut-away-4",
       "label": "Cut away: Lintel S",
       "select": {
         "layer": "Lintels",
@@ -585,7 +595,7 @@
       "group": "Cut away"
     },
     {
-      "id": "cut-away-4",
+      "id": "cut-away-5",
       "label": "Cut away: Door S left",
       "select": {
         "layer": "Doors",
@@ -595,7 +605,7 @@
       "group": "Cut away"
     },
     {
-      "id": "cut-away-5",
+      "id": "cut-away-6",
       "label": "Cut away: Door S right",
       "select": {
         "layer": "Doors",
@@ -605,7 +615,7 @@
       "group": "Cut away"
     },
     {
-      "id": "cut-away-6",
+      "id": "cut-away-7",
       "label": "Cut away: Hardware S",
       "select": {
         "layer": "Door hardware",
@@ -747,6 +757,12 @@
       {
         "select": {
           "layer": "Crates loose"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crate courses"
         },
         "role": "structure"
       },
