@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Building</title>
+<meta name="description" content="Axonometric drawings and interactive 3D views of the Light Building, Atelier Kempe Thill, Rotterdam 2001.">
+<style>
+  :root { --paper: #f8f6ed; --ink: #34372f; --muted: #6f7468; --rule: #dedbcd; --card: #fffefa; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #1d1f1b; --ink: #ecebe3; --muted: #a7aa9f; --rule: #3a3d36; --card: #262823; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 1120px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font: 400 clamp(34px, 6vw, 56px)/1.05 Georgia, "Times New Roman", serif; margin: 0 0 10px; letter-spacing: -0.02em; }
+  h2 { font: 400 26px/1.2 Georgia, "Times New Roman", serif; margin: 48px 0 6px; }
+  .lede { color: var(--muted); max-width: 640px; margin: 0; }
+  .views { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin-top: 18px; }
+  .views a { display: block; padding: 18px; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; color: inherit; text-decoration: none; }
+  .views a:hover, .views a:focus-visible { border-color: var(--ink); }
+  .views strong { display: block; font: 400 20px/1.25 Georgia, serif; margin-bottom: 4px; }
+  .views span { color: var(--muted); font-size: 14px; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin-top: 18px; }
+  figure { margin: 0; }
+  figure img, figure video { width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid var(--rule); background: #fff; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 56px; border-top: 1px solid var(--rule); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Light Building</h1>
+  <p class="lede">Museum pavilion of translucent beer crates, Atelier Kempe Thill, Rotterdam 2001. Model and drawings made with Three-Vis from photos, plan, section and wall details.</p>
+
+  <h2>Interactive 3D</h2>
+  <div class="views">
+    <a href="pavilion/"><strong>Pavilion</strong><span>Day, dusk and night, dynamic glow, explode slider and tree options</span></a>
+    <a href="construction/"><strong>Construction</strong><span>Six construction steps and the exploded axonometric; every crate is its own object (heavy on phones)</span></a>
+    <a href="inside/"><strong>Inside</strong><span>Cutaway without roof and south wall</span></a>
+    <a href="day/"><strong>Day drawing</strong><span>The daylight axonometric</span></a>
+  </div>
+
+  <h2>Drawings</h2>
+  <div class="gallery" id="gallery"></div>
+
+  <footer>Views open in the Three-Vis viewer; they load a 3 MB model, so give them a few seconds on mobile. Entourage from the Three-Vis asset library.</footer>
+</main>
+<script>
+  // filled from images/list.json (file, caption), written when the site is built
+  fetch('images/list.json').then(r => r.json()).then(items => {
+    const gallery = document.getElementById('gallery');
+    for (const { file, caption } of items) {
+      const figure = document.createElement('figure');
+      const media = document.createElement(file.endsWith('.mp4') ? 'video' : 'img');
+      if (media.tagName === 'VIDEO') Object.assign(media, { src: 'images/' + file, autoplay: true, loop: true, muted: true, playsInline: true });
+      else Object.assign(media, { src: 'images/' + file, alt: caption, loading: 'lazy' });
+      const text = document.createElement('figcaption'); text.textContent = caption;
+      figure.append(media, text); gallery.append(figure);
+    }
+  });
+</script>
+</body>
+</html>

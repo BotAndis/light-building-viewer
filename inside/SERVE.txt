@@ -1,0 +1,4 @@
+Offline viewer package. No CDN or account needed.
+Serve this directory over HTTP: python -m http.server 8080 --bind 127.0.0.1
+Open http://127.0.0.1:8080/
+Browser file:// restrictions prevent reliable direct double-click loading.

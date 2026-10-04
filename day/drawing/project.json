@@ -1,0 +1,3329 @@
+{
+  "version": 1,
+  "title": "Light Building",
+  "subtitle": "Museum pavilion of translucent beer crates, Atelier Kempe Thill, Rotterdam 2001",
+  "models": [
+    {
+      "id": "model",
+      "file": "assets/light-building-v5.3dm",
+      "units": "m",
+      "upAxis": "Z",
+      "sourceOrigin": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        30,
+        0
+      ],
+      "scale": 1,
+      "visible": true
+    }
+  ],
+  "style": {
+    "look": "collage",
+    "background": "#f8f6ed",
+    "fill": "#eeeddf",
+    "ink": "#5b6052",
+    "accent": "#b8654c",
+    "edges": true,
+    "edgeAngle": 35,
+    "shadows": true,
+    "ground": false,
+    "annotationLayout": "labels",
+    "sunDirection": [
+      0,
+      0.75,
+      0.66
+    ],
+    "diagramLayerColors": false,
+    "pictogramLayerColors": false,
+    "wireframeTriangles": false,
+    "modePresets": {
+      "collage": {
+        "edgeWidth": 1.3
+      }
+    }
+  },
+  "views": [
+    {
+      "id": "axon",
+      "label": "Axon",
+      "preset": "axon",
+      "direction": [
+        1.31,
+        1,
+        0.756
+      ],
+      "target": [
+        0.43,
+        3.1,
+        1.945
+      ],
+      "height": 17.5,
+      "fov": 45
+    }
+  ],
+  "layers": [
+    {
+      "id": "earth",
+      "label": "Earth",
+      "select": {
+        "layer": "Earth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#ded7c8",
+        "opacity": 1
+      },
+      "group": "Site"
+    },
+    {
+      "id": "gravel",
+      "label": "Gravel",
+      "select": {
+        "layer": "Gravel"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e7e0cf",
+        "opacity": 1,
+        "texture": {
+          "pattern": "gravel",
+          "repeat": 2
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "meadow",
+      "label": "Meadow",
+      "select": {
+        "layer": "Meadow"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9edd6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "meadow",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-walls",
+      "label": "Crate walls",
+      "select": {
+        "layer": "Crate walls"
+      },
+      "visible": true,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-atlas-day.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates",
+      "label": "Crates",
+      "select": {
+        "layer": "Crates"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crate-stack",
+      "label": "Crate stack",
+      "select": {
+        "layer": "Crate stack"
+      },
+      "visible": true,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-wall-static",
+      "label": "Crate wall static",
+      "select": {
+        "layer": "Crate wall static"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates-loose",
+      "label": "Crates loose",
+      "select": {
+        "layer": "Crates loose"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "pallet",
+      "label": "Pallet",
+      "select": {
+        "layer": "Pallet"
+      },
+      "visible": true,
+      "material": {
+        "color": "#cfb48e",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "doors",
+      "label": "Doors",
+      "select": {
+        "layer": "Doors"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9cfb6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "plinth",
+      "label": "Plinth",
+      "select": {
+        "layer": "Plinth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#f0d2b4",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-frames",
+      "label": "Door frames",
+      "select": {
+        "layer": "Door frames"
+      },
+      "visible": true,
+      "material": {
+        "color": "#43423e",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-hardware",
+      "label": "Door hardware",
+      "select": {
+        "layer": "Door hardware"
+      },
+      "visible": true,
+      "material": {
+        "color": "#a9a8a2",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "lintels",
+      "label": "Lintels",
+      "select": {
+        "layer": "Lintels"
+      },
+      "visible": true,
+      "material": {
+        "color": "#4d4c48",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof",
+      "label": "Roof",
+      "select": {
+        "layer": "Roof"
+      },
+      "visible": true,
+      "material": {
+        "color": "#cfd2ce",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/roof-trapezoid.png",
+          "repeat": 1,
+          "size": [
+            0.2,
+            0.2
+          ],
+          "align": "long-axis"
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof-edge",
+      "label": "Roof edge",
+      "select": {
+        "layer": "Roof edge"
+      },
+      "visible": true,
+      "material": {
+        "color": "#b4b8b4",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "ceiling-frame",
+      "label": "Ceiling frame",
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "visible": true,
+      "material": {
+        "color": "#3e3e3b",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "spots",
+      "label": "Spots",
+      "select": {
+        "layer": "Spots"
+      },
+      "visible": true,
+      "material": {
+        "color": "#34342f",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor",
+      "label": "Floor",
+      "select": {
+        "layer": "Floor"
+      },
+      "visible": true,
+      "material": {
+        "color": "#9a7a5a",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor-joists",
+      "label": "Floor joists",
+      "select": {
+        "layer": "Floor joists"
+      },
+      "visible": false,
+      "material": {
+        "color": "#c7a57c",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "furniture",
+      "label": "Furniture",
+      "select": {
+        "layer": "Furniture"
+      },
+      "visible": true,
+      "material": {
+        "color": "#d9cdb8",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "sleepers",
+      "label": "Sleepers",
+      "select": {
+        "layer": "Sleepers"
+      },
+      "visible": false,
+      "material": {
+        "color": "#b89a76",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "ground-anchors",
+      "label": "Ground anchors",
+      "select": {
+        "layer": "Ground anchors"
+      },
+      "visible": false,
+      "material": {
+        "color": "#6d6e70",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "tie-rods",
+      "label": "Tie rods",
+      "select": {
+        "layer": "Tie rods"
+      },
+      "visible": false,
+      "material": {
+        "color": "#55595e",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "clamp-plates",
+      "label": "Clamp plates",
+      "select": {
+        "layer": "Clamp plates"
+      },
+      "visible": false,
+      "material": {
+        "color": "#7b7f84",
+        "opacity": 1
+      },
+      "group": "Structure"
+    }
+  ],
+  "billboards": [
+    {
+      "id": "grass-1a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -17.46,
+        0,
+        -2.31
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-1b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -16.96,
+        0,
+        -2.78
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-1c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -17.96,
+        0,
+        -1.85
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-2a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -11.61,
+        0,
+        -7.19
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-2b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -11.11,
+        0,
+        -7.65
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-2c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -12.11,
+        0,
+        -6.73
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-3a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -3.93,
+        0,
+        -9.89
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-3b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -3.44,
+        0,
+        -10.35
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-3c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -4.43,
+        0,
+        -9.43
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-4a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        2.34,
+        0,
+        -15.02
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-4b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        2.84,
+        0,
+        -15.48
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-4c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        1.85,
+        0,
+        -14.55
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-5a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        9.59,
+        0,
+        -17.47
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-5b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        10.09,
+        0,
+        -17.93
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-5c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        9.09,
+        0,
+        -17.01
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-6a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -7.2,
+        0,
+        -6.16
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-6b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -6.71,
+        0,
+        -6.62
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-6c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -7.7,
+        0,
+        -5.69
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-7a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -17.19,
+        0,
+        7.35
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-7b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -16.69,
+        0,
+        6.88
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-7c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -17.69,
+        0,
+        7.81
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-8a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -11.1,
+        0,
+        15.49
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-8b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -10.6,
+        0,
+        15.03
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-8c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -11.6,
+        0,
+        15.96
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-9a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        12.21,
+        0,
+        -11.94
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-9b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        12.7,
+        0,
+        -12.4
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-9c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        11.71,
+        0,
+        -11.47
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-10a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -7.95,
+        0,
+        11.36
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-10b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -7.45,
+        0,
+        10.9
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-10c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -8.44,
+        0,
+        11.82
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-11a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        19.39,
+        0,
+        -4.89
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-11b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        19.89,
+        0,
+        -5.35
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-11c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        18.9,
+        0,
+        -4.42
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "tree-poplar-1",
+      "file": "trees/poplar-muted-7.svg",
+      "planFile": "trees/poplar-muted-7-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 9.86,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-1",
+      "file": "trees/a-poplar-7.svg",
+      "planFile": "trees/a-poplar-7-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 9.86,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-1",
+      "file": "trees/b-lime-5.svg",
+      "planFile": "trees/b-lime-5-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 11.63,
+      "height": 14.45,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-1",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--1-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--1--plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 7.73,
+      "height": 16.15,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00867",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(1).png",
+        "sha256": "db1b2502d8cf631390beb9561bd16b332cb5b0edcf16959f616306e6d2c263f5",
+        "title": "Bilder wasserfarben / Tree (1)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-1",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10--plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 7.97,
+      "height": 10.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00918",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(10).png",
+        "sha256": "61d3e4d442b75e07ff5f0f9d257d0bc43a8f8bb9b706d3bb21cf116e39d6405e",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-2",
+      "file": "trees/poplar-muted-11.svg",
+      "planFile": "trees/poplar-muted-11-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.13,
+      "height": 19,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-2",
+      "file": "trees/a-poplar-11.svg",
+      "planFile": "trees/a-poplar-11-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.13,
+      "height": 19,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-2",
+      "file": "trees/b-hornbeam-6.svg",
+      "planFile": "trees/b-hornbeam-6-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 8.28,
+      "height": 15.58,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-2",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--4-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--4--plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.93,
+      "height": 18.05,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00875",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(4).png",
+        "sha256": "129eb3cdb941b84a1ca182ff828e09227eec008e9e244ced73fb7ced00fe9f2d",
+        "title": "Bilder wasserfarben / Tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-2",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4--plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 7.42,
+      "height": 11.4,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00923",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(4).png",
+        "sha256": "7c476bf3ef13e2f2f37a565521bf513bc89633cba9b1a01d0bc037f37184ec42",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-3",
+      "file": "trees/poplar-muted-19.svg",
+      "planFile": "trees/poplar-muted-19-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 11.01,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-3",
+      "file": "trees/a-poplar-19.svg",
+      "planFile": "trees/a-poplar-19-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 11.01,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-3",
+      "file": "trees/b-lime-13.svg",
+      "planFile": "trees/b-lime-13-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 13.36,
+      "height": 15.3,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-3",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--2-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--2--plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 6.65,
+      "height": 17.1,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00873",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(2).png",
+        "sha256": "dbf6031ee0b28270ce6b3283b9dec1bee377a32ffe3d8a688ff00beb8b867316",
+        "title": "Bilder wasserfarben / Tree (2)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-3",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5--plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 5.25,
+      "height": 10.8,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00924",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(5).png",
+        "sha256": "ab54bb6873c49f7b0813b66462f25d43387dcffa078df1c8fc6207860f3a4686",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (5)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-4",
+      "file": "trees/poplar-muted-23.svg",
+      "planFile": "trees/poplar-muted-23-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.81,
+      "height": 17.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-4",
+      "file": "trees/a-poplar-23.svg",
+      "planFile": "trees/a-poplar-23-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.81,
+      "height": 17.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-4",
+      "file": "trees/b-oak-4.svg",
+      "planFile": "trees/b-oak-4-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 12.08,
+      "height": 9.63,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-4",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--10-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--10--plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.46,
+      "height": 16.63,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00868",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(10).png",
+        "sha256": "7ef1c6d9e497afa094efa322e2dbe8f0e12b7b75aaef9c888eb9c1f4c53de779",
+        "title": "Bilder wasserfarben / Tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-4",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7--plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 6.41,
+      "height": 10.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00926",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(7).png",
+        "sha256": "ecb75a1a4c04993a49a92d9ef20a2598ce03c7781b7cd7475b4f3ba58ff47ed1",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (7)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-5",
+      "file": "trees/poplar-muted-3.svg",
+      "planFile": "trees/poplar-muted-3-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 10.2,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-5",
+      "file": "trees/a-poplar-3.svg",
+      "planFile": "trees/a-poplar-3-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 10.2,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-5",
+      "file": "trees/b-hornbeam-12.svg",
+      "planFile": "trees/b-hornbeam-12-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 6.14,
+      "height": 13.12,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-5",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--3-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--3--plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 8.94,
+      "height": 15.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00874",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(3).png",
+        "sha256": "95c1c81ad10ff86d43c97b842e65139d3a3544a64239936ac7372c184203eb37",
+        "title": "Bilder wasserfarben / Tree (3)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-5",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12--plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 2.75,
+      "height": 9.6,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00920",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(12).png",
+        "sha256": "70c29788847b536db0a7bdf398165c961916447b5683e1cc0b73ac54f34bba93",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (12)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-6",
+      "file": "trees/poplar-muted-31.svg",
+      "planFile": "trees/poplar-muted-31-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 10.19,
+      "height": 16.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-6",
+      "file": "trees/a-poplar-31.svg",
+      "planFile": "trees/a-poplar-31-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 10.19,
+      "height": 16.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-6",
+      "file": "trees/b-oak-9.svg",
+      "planFile": "trees/b-oak-9-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 11.15,
+      "height": 9.08,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-6",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--1-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--1--plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 7.51,
+      "height": 15.67,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00867",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(1).png",
+        "sha256": "db1b2502d8cf631390beb9561bd16b332cb5b0edcf16959f616306e6d2c263f5",
+        "title": "Bilder wasserfarben / Tree (1)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-6",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10--plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 7.74,
+      "height": 9.9,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00918",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(10).png",
+        "sha256": "61d3e4d442b75e07ff5f0f9d257d0bc43a8f8bb9b706d3bb21cf116e39d6405e",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-7",
+      "file": "trees/poplar-muted-19.svg",
+      "planFile": "trees/poplar-muted-19-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 10.4,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-7",
+      "file": "trees/a-poplar-19.svg",
+      "planFile": "trees/a-poplar-19-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 10.4,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-7",
+      "file": "trees/b-lime-5.svg",
+      "planFile": "trees/b-lime-5-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 11.63,
+      "height": 14.45,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-7",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--4-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--4--plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 11.57,
+      "height": 16.15,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00875",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(4).png",
+        "sha256": "129eb3cdb941b84a1ca182ff828e09227eec008e9e244ced73fb7ced00fe9f2d",
+        "title": "Bilder wasserfarben / Tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-7",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4--plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 6.64,
+      "height": 10.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00923",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(4).png",
+        "sha256": "7c476bf3ef13e2f2f37a565521bf513bc89633cba9b1a01d0bc037f37184ec42",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-8",
+      "file": "trees/poplar-muted-11.svg",
+      "planFile": "trees/poplar-muted-11-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 9.89,
+      "height": 15.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-8",
+      "file": "trees/a-poplar-11.svg",
+      "planFile": "trees/a-poplar-11-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 9.89,
+      "height": 15.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-8",
+      "file": "trees/b-hornbeam-6.svg",
+      "planFile": "trees/b-hornbeam-6-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 6.76,
+      "height": 12.71,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-8",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--2-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--2--plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 5.72,
+      "height": 14.72,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00873",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(2).png",
+        "sha256": "dbf6031ee0b28270ce6b3283b9dec1bee377a32ffe3d8a688ff00beb8b867316",
+        "title": "Bilder wasserfarben / Tree (2)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-8",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5--plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 4.52,
+      "height": 9.3,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00924",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(5).png",
+        "sha256": "ab54bb6873c49f7b0813b66462f25d43387dcffa078df1c8fc6207860f3a4686",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (5)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-9",
+      "file": "trees/poplar-muted-7.svg",
+      "planFile": "trees/poplar-muted-7-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.28,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-9",
+      "file": "trees/a-poplar-7.svg",
+      "planFile": "trees/a-poplar-7-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.28,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-9",
+      "file": "trees/b-lime-13.svg",
+      "planFile": "trees/b-lime-13-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 11.88,
+      "height": 13.6,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-9",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--10-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--10--plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.56,
+      "height": 15.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00868",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(10).png",
+        "sha256": "7ef1c6d9e497afa094efa322e2dbe8f0e12b7b75aaef9c888eb9c1f4c53de779",
+        "title": "Bilder wasserfarben / Tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-9",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7--plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 5.86,
+      "height": 9.6,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00926",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(7).png",
+        "sha256": "ecb75a1a4c04993a49a92d9ef20a2598ce03c7781b7cd7475b4f3ba58ff47ed1",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (7)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-10",
+      "file": "trees/poplar-muted-23.svg",
+      "planFile": "trees/poplar-muted-23-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 11.12,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-10",
+      "file": "trees/a-poplar-23.svg",
+      "planFile": "trees/a-poplar-23-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 11.12,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-10",
+      "file": "trees/b-oak-4.svg",
+      "planFile": "trees/b-oak-4-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 12.42,
+      "height": 9.9,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-10",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--3-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--3--plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 10.05,
+      "height": 17.1,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00874",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(3).png",
+        "sha256": "95c1c81ad10ff86d43c97b842e65139d3a3544a64239936ac7372c184203eb37",
+        "title": "Bilder wasserfarben / Tree (3)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-10",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12--plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 3.09,
+      "height": 10.8,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00920",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(12).png",
+        "sha256": "70c29788847b536db0a7bdf398165c961916447b5683e1cc0b73ac54f34bba93",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (12)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-11",
+      "file": "trees/poplar-muted-31.svg",
+      "planFile": "trees/poplar-muted-31-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 10.5,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar"
+    },
+    {
+      "id": "tree-a-11",
+      "file": "trees/a-poplar-31.svg",
+      "planFile": "trees/a-poplar-31-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 10.5,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-11",
+      "file": "trees/b-hornbeam-12.svg",
+      "planFile": "trees/b-hornbeam-12-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 6.53,
+      "height": 13.94,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-11",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--1-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--1--plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 7.73,
+      "height": 16.15,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00867",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(1).png",
+        "sha256": "db1b2502d8cf631390beb9561bd16b332cb5b0edcf16959f616306e6d2c263f5",
+        "title": "Bilder wasserfarben / Tree (1)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-11",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10--plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 7.97,
+      "height": 10.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00918",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(10).png",
+        "sha256": "61d3e4d442b75e07ff5f0f9d257d0bc43a8f8bb9b706d3bb21cf116e39d6405e",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "person-a",
+      "file": "assets/library/08f63c6ac507423d07bd/HUAJJE_studioalternativi__huajje-021.png",
+      "position": [
+        1.021,
+        0,
+        3.568
+      ],
+      "width": 0.6532886356017432,
+      "height": 1.72,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        764,
+        165,
+        1133,
+        2983
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00721",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-021.png",
+        "sha256": "08f63c6ac507423d07bd27206782cad5d93fd0e8fd0b611dbde34bf8ce85c397",
+        "title": "HUAJJE_studioalternativi / huajje 021",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true
+    },
+    {
+      "id": "person-b",
+      "file": "assets/library/cbd49444b2b80b5dafd0/HUAJJE_studioalternativi__huajje-006.png",
+      "position": [
+        4.072,
+        0,
+        3.653
+      ],
+      "width": 0.7132193958664547,
+      "height": 1.66,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        638,
+        394,
+        1081,
+        2516
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00706",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-006.png",
+        "sha256": "cbd49444b2b80b5dafd04c09d5c9088e149653c333e2b79c742dda260a05355a",
+        "title": "HUAJJE_studioalternativi / huajje 006",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0293,
+          0.65
+        ]
+      }
+    },
+    {
+      "id": "person-c",
+      "file": "assets/library/13485aa1a615a9884970/HUAJJE_studioalternativi__huajje-020.png",
+      "position": [
+        8.75,
+        0,
+        -4.244
+      ],
+      "width": 0.8688759822343696,
+      "height": 1.7,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        369,
+        239,
+        1496,
+        2927
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00720",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-020.png",
+        "sha256": "13485aa1a615a98849704c4dc3421c01b01e542b08e2b34234eda058d2071943",
+        "title": "HUAJJE_studioalternativi / huajje 020",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0,
+          0.3205
+        ]
+      }
+    },
+    {
+      "id": "person-d",
+      "file": "assets/library/c72e4d20c1b33015263e/HUAJJE_studioalternativi_C2__C2_huajje1.png",
+      "position": [
+        -1.65,
+        0,
+        8.343
+      ],
+      "width": 0.6006362672322375,
+      "height": 1.8,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        813,
+        351,
+        944,
+        2829
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00059",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi_C2__C2_huajje1.png",
+        "sha256": "c72e4d20c1b33015263e0b983307a4cc0f6b2868bc32cad396174ddbe182e573",
+        "title": "HUAJJE_studioalternativi_C2 / C2_huajje1",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0159,
+          0.1734
+        ]
+      }
+    },
+    {
+      "id": "person-e",
+      "file": "assets/library/b201ecf6202002afae80/HUAJJE_studioalternativi_C2__C2_huajje12.png",
+      "position": [
+        -0.93,
+        0,
+        8.389
+      ],
+      "width": 0.6331867388362652,
+      "height": 1.7,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        710,
+        217,
+        1101,
+        2956
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00062",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi_C2__C2_huajje12.png",
+        "sha256": "b201ecf6202002afae80550d90f621ee22f612fddab82288d8a9e0f66a92bd49",
+        "title": "HUAJJE_studioalternativi_C2 / C2_huajje12",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0,
+          0.8934
+        ]
+      }
+    },
+    {
+      "id": "person-f",
+      "file": "assets/library/a13dad9e430db6fc01f2/HUAJJE_studioalternativi_C2__C2_huajje5.png",
+      "position": [
+        8.284,
+        0,
+        5.148
+      ],
+      "width": 0.5557147826086956,
+      "height": 1.68,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        881,
+        310,
+        951,
+        2875
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00069",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi_C2__C2_huajje5.png",
+        "sha256": "a13dad9e430db6fc01f278bd97771705fbff7f632ef267179cea2584a271e571",
+        "title": "HUAJJE_studioalternativi_C2 / C2_huajje5",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0072,
+          0.5051
+        ]
+      }
+    }
+  ],
+  "scatter": [
+    {
+      "id": "lawn",
+      "on": {
+        "layer": "Meadow"
+      },
+      "avoid": [],
+      "density": 30,
+      "mix": [
+        {
+          "plant": "grass",
+          "weight": 8,
+          "height": [
+            0.12,
+            0.3
+          ]
+        },
+        {
+          "plant": "grass",
+          "weight": 3,
+          "height": [
+            0.1,
+            0.22
+          ],
+          "color": "#a3b37e"
+        },
+        {
+          "plant": "daisy",
+          "weight": 0.5,
+          "height": [
+            0.08,
+            0.16
+          ]
+        },
+        {
+          "plant": "sprinkle",
+          "weight": 0.4,
+          "height": [
+            0.08,
+            0.14
+          ]
+        }
+      ],
+      "drift": 3,
+      "margin": 0.2,
+      "seed": 3,
+      "maxCount": 60000,
+      "scale": 1,
+      "opacity": 1,
+      "adaptive": false
+    }
+  ],
+  "annotations": [],
+  "steps": [],
+  "exploded": [],
+  "billboardVariants": {
+    "poplar": {
+      "label": "First poplars"
+    },
+    "a": {
+      "label": "A Brown poplars"
+    },
+    "b": {
+      "label": "B Mixed"
+    },
+    "c": {
+      "label": "C Watercolour"
+    },
+    "d": {
+      "label": "D Pastel"
+    }
+  },
+  "variant": "a",
+  "explodeGroups": {},
+  "layout": {
+    "minHeadroom": 2.1,
+    "minOverlapArea": 0.01,
+    "footingTolerance": 0.045,
+    "roles": [
+      {
+        "select": {
+          "layer": "Earth"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Gravel"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Meadow"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Crate walls"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crate wall static"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates loose"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Doors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Plinth"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door frames"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door hardware"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Lintels"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof edge"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ceiling frame"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Spots"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Tie rods"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Clamp plates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Sleepers"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ground anchors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor joists"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor"
+        },
+        "role": "deck"
+      },
+      {
+        "select": {
+          "layer": "Crate stack"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Pallet"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Furniture"
+        },
+        "role": "furniture"
+      }
+    ],
+    "allowedCrossings": []
+  },
+  "export": {
+    "width": 2400,
+    "height": 1600,
+    "transparent": false,
+    "annotations": false,
+    "quality": "high"
+  }
+}

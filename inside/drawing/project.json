@@ -1,0 +1,871 @@
+{
+  "version": 1,
+  "title": "Light Building",
+  "subtitle": "Museum pavilion of translucent beer crates, Atelier Kempe Thill, Rotterdam 2001 / inside",
+  "models": [
+    {
+      "id": "model",
+      "file": "assets/light-building-v5.3dm",
+      "units": "m",
+      "upAxis": "Z",
+      "sourceOrigin": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        30,
+        0
+      ],
+      "scale": 1,
+      "visible": true
+    }
+  ],
+  "style": {
+    "look": "collage",
+    "background": "#dcd8df",
+    "fill": "#d9d7d9",
+    "ink": "#4c4f55",
+    "accent": "#b8654c",
+    "edges": true,
+    "edgeAngle": 35,
+    "shadows": true,
+    "ground": false,
+    "annotationLayout": "labels",
+    "sunDirection": [
+      0,
+      0.75,
+      0.66
+    ],
+    "diagramLayerColors": false,
+    "pictogramLayerColors": false,
+    "wireframeTriangles": false,
+    "modePresets": {
+      "collage": {
+        "edgeWidth": 1.3
+      }
+    },
+    "atmosphere": {
+      "light": 0.55,
+      "tint": "#c4cbe4",
+      "sun": "#f3c9a2",
+      "sunStrength": 1,
+      "pools": [],
+      "explodeFade": 0.85,
+      "bloom": {
+        "strength": 0.5,
+        "radius": 0.6,
+        "threshold": 0.97
+      },
+      "lamps": [
+        {
+          "position": [
+            -3.897,
+            4.2,
+            2.25
+          ],
+          "color": "#ffe2b8",
+          "intensity": 8,
+          "distance": 9
+        },
+        {
+          "position": [
+            -1.299,
+            4.2,
+            0.75
+          ],
+          "color": "#ffe2b8",
+          "intensity": 8,
+          "distance": 9
+        },
+        {
+          "position": [
+            1.299,
+            4.2,
+            -0.75
+          ],
+          "color": "#ffe2b8",
+          "intensity": 8,
+          "distance": 9
+        },
+        {
+          "position": [
+            3.897,
+            4.2,
+            -2.25
+          ],
+          "color": "#ffe2b8",
+          "intensity": 8,
+          "distance": 9
+        }
+      ]
+    }
+  },
+  "views": [
+    {
+      "id": "inside",
+      "label": "Inside",
+      "preset": "axon",
+      "direction": [
+        1.05,
+        1.25,
+        0.6
+      ],
+      "target": [
+        -0.04,
+        2.5,
+        -0.67
+      ],
+      "height": 13.2,
+      "fov": 45
+    }
+  ],
+  "layers": [
+    {
+      "id": "earth",
+      "label": "Earth",
+      "select": {
+        "layer": "Earth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#ded7c8",
+        "opacity": 1
+      },
+      "group": "Site"
+    },
+    {
+      "id": "gravel",
+      "label": "Gravel",
+      "select": {
+        "layer": "Gravel"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e7e0cf",
+        "opacity": 1,
+        "texture": {
+          "pattern": "gravel",
+          "repeat": 2
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "meadow",
+      "label": "Meadow",
+      "select": {
+        "layer": "Meadow"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9edd6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "meadow",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-walls",
+      "label": "Crate walls",
+      "select": {
+        "layer": "Crate walls"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates",
+      "label": "Crates",
+      "select": {
+        "layer": "Crates"
+      },
+      "visible": true,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        },
+        "glow": {
+          "color": "#fff4e6",
+          "intensity": 0.4
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crate-stack",
+      "label": "Crate stack",
+      "select": {
+        "layer": "Crate stack"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-wall-static",
+      "label": "Crate wall static",
+      "select": {
+        "layer": "Crate wall static"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates-loose",
+      "label": "Crates loose",
+      "select": {
+        "layer": "Crates loose"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "pallet",
+      "label": "Pallet",
+      "select": {
+        "layer": "Pallet"
+      },
+      "visible": false,
+      "material": {
+        "color": "#cfb48e",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "doors",
+      "label": "Doors",
+      "select": {
+        "layer": "Doors"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9cfb6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "plinth",
+      "label": "Plinth",
+      "select": {
+        "layer": "Plinth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#f0d2b4",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-frames",
+      "label": "Door frames",
+      "select": {
+        "layer": "Door frames"
+      },
+      "visible": true,
+      "material": {
+        "color": "#43423e",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-hardware",
+      "label": "Door hardware",
+      "select": {
+        "layer": "Door hardware"
+      },
+      "visible": true,
+      "material": {
+        "color": "#a9a8a2",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "lintels",
+      "label": "Lintels",
+      "select": {
+        "layer": "Lintels"
+      },
+      "visible": true,
+      "material": {
+        "color": "#4d4c48",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof",
+      "label": "Roof",
+      "select": {
+        "layer": "Roof"
+      },
+      "visible": false,
+      "material": {
+        "color": "#cfd2ce",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/roof-trapezoid.png",
+          "repeat": 1,
+          "size": [
+            0.2,
+            0.2
+          ],
+          "align": "long-axis"
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof-edge",
+      "label": "Roof edge",
+      "select": {
+        "layer": "Roof edge"
+      },
+      "visible": false,
+      "material": {
+        "color": "#b4b8b4",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "ceiling-frame",
+      "label": "Ceiling frame",
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "visible": false,
+      "material": {
+        "color": "#3e3e3b",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "spots",
+      "label": "Spots",
+      "select": {
+        "layer": "Spots"
+      },
+      "visible": false,
+      "material": {
+        "color": "#34342f",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor",
+      "label": "Floor",
+      "select": {
+        "layer": "Floor"
+      },
+      "visible": true,
+      "material": {
+        "color": "#9a7a5a",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor-joists",
+      "label": "Floor joists",
+      "select": {
+        "layer": "Floor joists"
+      },
+      "visible": false,
+      "material": {
+        "color": "#c7a57c",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "furniture",
+      "label": "Furniture",
+      "select": {
+        "layer": "Furniture"
+      },
+      "visible": true,
+      "material": {
+        "color": "#d9cdb8",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "sleepers",
+      "label": "Sleepers",
+      "select": {
+        "layer": "Sleepers"
+      },
+      "visible": false,
+      "material": {
+        "color": "#b89a76",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "ground-anchors",
+      "label": "Ground anchors",
+      "select": {
+        "layer": "Ground anchors"
+      },
+      "visible": false,
+      "material": {
+        "color": "#6d6e70",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "tie-rods",
+      "label": "Tie rods",
+      "select": {
+        "layer": "Tie rods"
+      },
+      "visible": false,
+      "material": {
+        "color": "#55595e",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "clamp-plates",
+      "label": "Clamp plates",
+      "select": {
+        "layer": "Clamp plates"
+      },
+      "visible": false,
+      "material": {
+        "color": "#7b7f84",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "cut-away-1",
+      "label": "Cut away: south wall",
+      "select": {
+        "layer": "Crates",
+        "name": "Course * S*"
+      },
+      "visible": false,
+      "group": "Cut away"
+    },
+    {
+      "id": "cut-away-2",
+      "label": "Cut away: Frame S",
+      "select": {
+        "layer": "Door frames",
+        "name": "Frame S"
+      },
+      "visible": false,
+      "group": "Cut away"
+    },
+    {
+      "id": "cut-away-3",
+      "label": "Cut away: Lintel S",
+      "select": {
+        "layer": "Lintels",
+        "name": "Lintel S"
+      },
+      "visible": false,
+      "group": "Cut away"
+    },
+    {
+      "id": "cut-away-4",
+      "label": "Cut away: Door S left",
+      "select": {
+        "layer": "Doors",
+        "name": "Door S left"
+      },
+      "visible": false,
+      "group": "Cut away"
+    },
+    {
+      "id": "cut-away-5",
+      "label": "Cut away: Door S right",
+      "select": {
+        "layer": "Doors",
+        "name": "Door S right"
+      },
+      "visible": false,
+      "group": "Cut away"
+    },
+    {
+      "id": "cut-away-6",
+      "label": "Cut away: Hardware S",
+      "select": {
+        "layer": "Door hardware",
+        "name": "Hardware S"
+      },
+      "visible": false,
+      "group": "Cut away"
+    }
+  ],
+  "billboards": [
+    {
+      "id": "person-a",
+      "file": "assets/library/08f63c6ac507423d07bd/HUAJJE_studioalternativi__huajje-021.png",
+      "position": [
+        -2.921,
+        0.17,
+        1.34
+      ],
+      "width": 0.6532886356017432,
+      "height": 1.72,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        764,
+        165,
+        1133,
+        2983
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00721",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-021.png",
+        "sha256": "08f63c6ac507423d07bd27206782cad5d93fd0e8fd0b611dbde34bf8ce85c397",
+        "title": "HUAJJE_studioalternativi / huajje 021",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true
+    },
+    {
+      "id": "person-b",
+      "file": "assets/library/cbd49444b2b80b5dafd0/HUAJJE_studioalternativi__huajje-006.png",
+      "position": [
+        1.802,
+        0.17,
+        -2.079
+      ],
+      "width": 0.7132193958664547,
+      "height": 1.66,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        638,
+        394,
+        1081,
+        2516
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00706",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-006.png",
+        "sha256": "cbd49444b2b80b5dafd04c09d5c9088e149653c333e2b79c742dda260a05355a",
+        "title": "HUAJJE_studioalternativi / huajje 006",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0293,
+          0.65
+        ]
+      }
+    }
+  ],
+  "scatter": [],
+  "annotations": [],
+  "steps": [],
+  "exploded": [],
+  "billboardVariants": {},
+  "explodeGroups": {},
+  "layout": {
+    "minHeadroom": 2.1,
+    "minOverlapArea": 0.01,
+    "footingTolerance": 0.045,
+    "roles": [
+      {
+        "select": {
+          "layer": "Earth"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Gravel"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Meadow"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Crate walls"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crate wall static"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates loose"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Doors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Plinth"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door frames"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door hardware"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Lintels"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof edge"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ceiling frame"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Spots"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Tie rods"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Clamp plates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Sleepers"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ground anchors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor joists"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor"
+        },
+        "role": "deck"
+      },
+      {
+        "select": {
+          "layer": "Crate stack"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Pallet"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Furniture"
+        },
+        "role": "furniture"
+      }
+    ],
+    "allowedCrossings": []
+  },
+  "export": {
+    "width": 2400,
+    "height": 1600,
+    "transparent": false,
+    "annotations": false,
+    "quality": "high"
+  }
+}

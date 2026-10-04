@@ -1,0 +1,3855 @@
+{
+  "version": 1,
+  "title": "Light Building",
+  "subtitle": "Museum pavilion of translucent beer crates, Atelier Kempe Thill, Rotterdam 2001 / construction",
+  "models": [
+    {
+      "id": "model",
+      "file": "assets/light-building-v5.3dm",
+      "units": "m",
+      "upAxis": "Z",
+      "sourceOrigin": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        30,
+        0
+      ],
+      "scale": 1,
+      "visible": true
+    }
+  ],
+  "style": {
+    "look": "collage",
+    "background": "#f8f6ed",
+    "fill": "#eeeddf",
+    "ink": "#5b6052",
+    "accent": "#e2a560",
+    "edges": true,
+    "edgeAngle": 35,
+    "shadows": true,
+    "ground": false,
+    "annotationLayout": "legend",
+    "sunDirection": [
+      0,
+      0.75,
+      0.66
+    ],
+    "diagramLayerColors": false,
+    "pictogramLayerColors": false,
+    "wireframeTriangles": false,
+    "modePresets": {
+      "collage": {
+        "edgeWidth": 1.3
+      }
+    }
+  },
+  "views": [
+    {
+      "id": "build",
+      "label": "Construction",
+      "preset": "axon",
+      "direction": [
+        1.31,
+        1.05,
+        0.756
+      ],
+      "target": [
+        2,
+        2.7,
+        -2.424
+      ],
+      "height": 17,
+      "fov": 45
+    },
+    {
+      "id": "explode",
+      "label": "Exploded",
+      "preset": "axon",
+      "direction": [
+        1.31,
+        1.05,
+        0.756
+      ],
+      "target": [
+        2.45,
+        4.4,
+        -3.204
+      ],
+      "height": 21.5,
+      "fov": 45
+    },
+    {
+      "id": "explode-floor",
+      "label": "Exploded + floor",
+      "preset": "axon",
+      "direction": [
+        1.31,
+        1.05,
+        0.756
+      ],
+      "target": [
+        2.8,
+        6,
+        -3.81
+      ],
+      "height": 25.5,
+      "fov": 45
+    }
+  ],
+  "layers": [
+    {
+      "id": "earth",
+      "label": "Earth",
+      "select": {
+        "layer": "Earth"
+      },
+      "visible": false,
+      "material": {
+        "color": "#ded7c8",
+        "opacity": 1
+      },
+      "group": "Site"
+    },
+    {
+      "id": "gravel",
+      "label": "Gravel",
+      "select": {
+        "layer": "Gravel"
+      },
+      "visible": false,
+      "material": {
+        "color": "#e7e0cf",
+        "opacity": 1,
+        "texture": {
+          "pattern": "gravel",
+          "repeat": 2
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "meadow",
+      "label": "Meadow",
+      "select": {
+        "layer": "Meadow"
+      },
+      "visible": false,
+      "material": {
+        "color": "#e9edd6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "meadow",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-walls",
+      "label": "Crate walls",
+      "select": {
+        "layer": "Crate walls"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates",
+      "label": "Crates",
+      "select": {
+        "layer": "Crates"
+      },
+      "visible": true,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        },
+        "glow": {
+          "color": "#ffffff",
+          "intensity": 0.3
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crate-stack",
+      "label": "Crate stack",
+      "select": {
+        "layer": "Crate stack"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-wall-static",
+      "label": "Crate wall static",
+      "select": {
+        "layer": "Crate wall static"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates-loose",
+      "label": "Crates loose",
+      "select": {
+        "layer": "Crates loose"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "pallet",
+      "label": "Pallet",
+      "select": {
+        "layer": "Pallet"
+      },
+      "visible": false,
+      "material": {
+        "color": "#cfb48e",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "doors",
+      "label": "Doors",
+      "select": {
+        "layer": "Doors"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9cfb6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "plinth",
+      "label": "Plinth",
+      "select": {
+        "layer": "Plinth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#f0d2b4",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-frames",
+      "label": "Door frames",
+      "select": {
+        "layer": "Door frames"
+      },
+      "visible": true,
+      "material": {
+        "color": "#43423e",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-hardware",
+      "label": "Door hardware",
+      "select": {
+        "layer": "Door hardware"
+      },
+      "visible": true,
+      "material": {
+        "color": "#a9a8a2",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "lintels",
+      "label": "Lintels",
+      "select": {
+        "layer": "Lintels"
+      },
+      "visible": true,
+      "material": {
+        "color": "#4d4c48",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof",
+      "label": "Roof",
+      "select": {
+        "layer": "Roof"
+      },
+      "visible": true,
+      "material": {
+        "color": "#cfd2ce",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/roof-trapezoid.png",
+          "repeat": 1,
+          "size": [
+            0.2,
+            0.2
+          ],
+          "align": "long-axis"
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof-edge",
+      "label": "Roof edge",
+      "select": {
+        "layer": "Roof edge"
+      },
+      "visible": true,
+      "material": {
+        "color": "#b4b8b4",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "ceiling-frame",
+      "label": "Ceiling frame",
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "visible": true,
+      "material": {
+        "color": "#3e3e3b",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "spots",
+      "label": "Spots",
+      "select": {
+        "layer": "Spots"
+      },
+      "visible": true,
+      "material": {
+        "color": "#34342f",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor",
+      "label": "Floor",
+      "select": {
+        "layer": "Floor"
+      },
+      "visible": true,
+      "material": {
+        "color": "#9a7a5a",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor-joists",
+      "label": "Floor joists",
+      "select": {
+        "layer": "Floor joists"
+      },
+      "visible": true,
+      "material": {
+        "color": "#c7a57c",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "furniture",
+      "label": "Furniture",
+      "select": {
+        "layer": "Furniture"
+      },
+      "visible": true,
+      "material": {
+        "color": "#d9cdb8",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "sleepers",
+      "label": "Sleepers",
+      "select": {
+        "layer": "Sleepers"
+      },
+      "visible": true,
+      "material": {
+        "color": "#b89a76",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "ground-anchors",
+      "label": "Ground anchors",
+      "select": {
+        "layer": "Ground anchors"
+      },
+      "visible": true,
+      "material": {
+        "color": "#6d6e70",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "tie-rods",
+      "label": "Tie rods",
+      "select": {
+        "layer": "Tie rods"
+      },
+      "visible": true,
+      "material": {
+        "color": "#55595e",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "clamp-plates",
+      "label": "Clamp plates",
+      "select": {
+        "layer": "Clamp plates"
+      },
+      "visible": true,
+      "material": {
+        "color": "#7b7f84",
+        "opacity": 1
+      },
+      "group": "Structure"
+    }
+  ],
+  "billboards": [],
+  "scatter": [],
+  "annotations": [
+    {
+      "type": "label",
+      "id": "a-sleepers",
+      "text": "timber sleepers",
+      "point": [
+        -4.991,
+        0,
+        6.77
+      ],
+      "offset": [
+        -40,
+        40
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-channel",
+      "text": "steel U-channel",
+      "point": [
+        7.562,
+        0.15,
+        -1.517
+      ],
+      "offset": [
+        40,
+        30
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-floor",
+      "text": "timber joists every 50 cm",
+      "point": [
+        3.648,
+        0.11,
+        0.319
+      ],
+      "offset": [
+        60,
+        60
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-crate",
+      "text": "beer crate 395 × 295 × 235",
+      "point": [
+        -4.411,
+        0.8,
+        5.396
+      ],
+      "offset": [
+        -60,
+        70
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-rods",
+      "text": "threaded rods + clamp plates",
+      "point": [
+        -3.042,
+        3,
+        4.606
+      ],
+      "offset": [
+        -80,
+        -60
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-roof",
+      "text": "trapezoidal steel deck",
+      "point": [
+        -2.598,
+        6.2,
+        1.5
+      ],
+      "offset": [
+        -60,
+        -60
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-frame",
+      "text": "steel door frame, full wall depth",
+      "point": [
+        1.8,
+        1.6,
+        1.818
+      ],
+      "offset": [
+        70,
+        60
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "a-door",
+      "text": "steel double doors on all four sides",
+      "point": [
+        1.024,
+        1.4,
+        2.873
+      ],
+      "offset": [
+        -80,
+        70
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-roof",
+      "text": "trapezoidal steel deck",
+      "point": [
+        4.679,
+        12.34,
+        0.104
+      ],
+      "offset": [
+        110,
+        -30
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-edge",
+      "text": "steel roof edge",
+      "point": [
+        -5.095,
+        11.68,
+        5.791
+      ],
+      "offset": [
+        -90,
+        -10
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-ceiling",
+      "text": "ceiling frame + spots",
+      "point": [
+        -4.986,
+        10.9,
+        5.384
+      ],
+      "offset": [
+        -100,
+        15
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-courses",
+      "text": "crates lifted one by one: stack bond",
+      "point": [
+        7.391,
+        10.12,
+        -1.419
+      ],
+      "offset": [
+        90,
+        -50
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-rods",
+      "text": "vertical tie rods through the crates",
+      "point": [
+        6.786,
+        5.2,
+        -1.147
+      ],
+      "offset": [
+        100,
+        10
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-wall",
+      "text": "beer-crate wall, 25 courses",
+      "point": [
+        -3.096,
+        2.5,
+        4.637
+      ],
+      "offset": [
+        -120,
+        0
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-door",
+      "text": "steel double door in a steel frame",
+      "point": [
+        1.024,
+        1.4,
+        2.873
+      ],
+      "offset": [
+        -110,
+        50
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-channel",
+      "text": "steel U-channel",
+      "point": [
+        7.579,
+        -0.5,
+        -1.512
+      ],
+      "offset": [
+        80,
+        20
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "x-sleepers",
+      "text": "timber sleepers + ground anchors",
+      "point": [
+        8.729,
+        -1.23,
+        -0.802
+      ],
+      "offset": [
+        70,
+        20
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-roof",
+      "text": "trapezoidal steel deck",
+      "point": [
+        4.679,
+        15.94,
+        0.104
+      ],
+      "offset": [
+        110,
+        -30
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-edge",
+      "text": "steel roof edge",
+      "point": [
+        -5.095,
+        15.28,
+        5.791
+      ],
+      "offset": [
+        -90,
+        -10
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-ceiling",
+      "text": "ceiling frame + spots",
+      "point": [
+        -4.986,
+        14.5,
+        5.384
+      ],
+      "offset": [
+        -100,
+        15
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-courses",
+      "text": "crates lifted one by one: stack bond",
+      "point": [
+        7.391,
+        13.72,
+        -1.419
+      ],
+      "offset": [
+        90,
+        -50
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-rods",
+      "text": "vertical tie rods through the crates",
+      "point": [
+        6.786,
+        8.8,
+        -1.147
+      ],
+      "offset": [
+        100,
+        10
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-wall",
+      "text": "beer-crate wall, 25 courses",
+      "point": [
+        -3.096,
+        6.1,
+        4.637
+      ],
+      "offset": [
+        -120,
+        0
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-door",
+      "text": "steel double door in a steel frame",
+      "point": [
+        1.024,
+        5,
+        2.873
+      ],
+      "offset": [
+        -110,
+        50
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-channel",
+      "text": "steel U-channel",
+      "point": [
+        7.579,
+        -0.5,
+        -1.512
+      ],
+      "offset": [
+        80,
+        20
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-sleepers",
+      "text": "timber sleepers + ground anchors",
+      "point": [
+        8.729,
+        -1.23,
+        -0.802
+      ],
+      "offset": [
+        70,
+        20
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-floor",
+      "text": "plank floor",
+      "point": [
+        7.156,
+        2.27,
+        -1.626
+      ],
+      "offset": [
+        80,
+        10
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
+      "id": "fx-joists",
+      "text": "timber joists every 50 cm",
+      "point": [
+        6.943,
+        1.01,
+        -1.514
+      ],
+      "offset": [
+        80,
+        20
+      ],
+      "color": "#3b3f38"
+    }
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "title": "1 Foundation",
+      "text": "Timber sleepers spread the load on the gravel; driven steel anchors hold the rusty steel channel that takes the first course.",
+      "view": "build",
+      "visible": [
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Plinth"
+        }
+      ],
+      "hidden": [],
+      "highlight": [
+        {
+          "layer": "Plinth"
+        }
+      ],
+      "explode": 0,
+      "annotationIds": [
+        "a-sleepers",
+        "a-channel"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "2 Floor joists",
+      "text": "Timber joists every 50 cm span across the steel channel; the plank floor is laid on them.",
+      "view": "build",
+      "visible": [
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Floor joists"
+        }
+      ],
+      "hidden": [],
+      "highlight": [
+        {
+          "layer": "Floor joists"
+        }
+      ],
+      "explode": 0,
+      "annotationIds": [
+        "a-floor"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "3 Floor and first courses",
+      "text": "On the plank floor, standard Dutch beer crates (395 × 295 × 235 mm), a colourless translucent edition, are stacked in stack bond on the channel: long walls 37 crates, end walls 11.",
+      "view": "build",
+      "visible": [
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Floor joists"
+        },
+        {
+          "layer": "Floor"
+        },
+        {
+          "layer": "Furniture"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 01 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 02 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 03 *"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C02"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C02"
+        }
+      ],
+      "hidden": [],
+      "highlight": [
+        {
+          "layer": "Crates",
+          "name": "Course 01 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 02 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 03 *"
+        }
+      ],
+      "explode": 0,
+      "annotationIds": [
+        "a-crate"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "4 Tie rods",
+      "text": "Every second course a pair of threaded rods with clamp plates; vertical rods every second crate post-tension the crate wall. Steel frames line the door openings through the full wall depth.",
+      "view": "build",
+      "visible": [
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Floor joists"
+        },
+        {
+          "layer": "Floor"
+        },
+        {
+          "layer": "Furniture"
+        },
+        {
+          "layer": "Door frames"
+        },
+        {
+          "layer": "Lintels"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 01 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 02 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 03 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 04 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 05 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 06 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 07 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 08 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 09 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 10 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 11 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 12 *"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C02"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C02"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C04"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C04"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C06"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C06"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C08"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C08"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C10"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C10"
+        },
+        {
+          "layer": "Clamp plates",
+          "name": "Plates C12"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods C12"
+        },
+        {
+          "layer": "Tie rods",
+          "name": "Rods vertical"
+        }
+      ],
+      "hidden": [],
+      "highlight": [
+        {
+          "layer": "Tie rods"
+        },
+        {
+          "layer": "Clamp plates"
+        }
+      ],
+      "explode": 0,
+      "annotationIds": [
+        "a-rods",
+        "a-frame"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "5 Walls",
+      "text": "25 courses, about 2,270 crates, give a 6 m high load-bearing translucent wall.",
+      "view": "build",
+      "visible": [
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Floor joists"
+        },
+        {
+          "layer": "Floor"
+        },
+        {
+          "layer": "Furniture"
+        },
+        {
+          "layer": "Door frames"
+        },
+        {
+          "layer": "Lintels"
+        },
+        {
+          "layer": "Crates"
+        },
+        {
+          "layer": "Tie rods"
+        },
+        {
+          "layer": "Clamp plates"
+        }
+      ],
+      "hidden": [],
+      "highlight": [
+        {
+          "layer": "Crates",
+          "name": "Course 13 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 14 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 15 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 16 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 17 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 18 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 19 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 20 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 21 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 22 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 23 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 24 *"
+        },
+        {
+          "layer": "Crates",
+          "name": "Course 25 *"
+        }
+      ],
+      "explode": 0,
+      "annotationIds": []
+    },
+    {
+      "id": "s6",
+      "title": "6 Doors and roof",
+      "text": "Rusty steel double doors on all four sides; a galvanised trapezoidal deck in a steel edge closes the box. Built by six people in one day.",
+      "view": "build",
+      "visible": [
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Floor joists"
+        },
+        {
+          "layer": "Floor"
+        },
+        {
+          "layer": "Furniture"
+        },
+        {
+          "layer": "Door frames"
+        },
+        {
+          "layer": "Lintels"
+        },
+        {
+          "layer": "Crates"
+        },
+        {
+          "layer": "Tie rods"
+        },
+        {
+          "layer": "Clamp plates"
+        },
+        {
+          "layer": "Doors"
+        },
+        {
+          "layer": "Door hardware"
+        },
+        {
+          "layer": "Roof edge"
+        },
+        {
+          "layer": "Roof"
+        },
+        {
+          "layer": "Ceiling frame"
+        },
+        {
+          "layer": "Spots"
+        }
+      ],
+      "hidden": [],
+      "highlight": [
+        {
+          "layer": "Doors"
+        },
+        {
+          "layer": "Roof"
+        },
+        {
+          "layer": "Roof edge"
+        }
+      ],
+      "explode": 0,
+      "annotationIds": [
+        "a-roof",
+        "a-door"
+      ]
+    },
+    {
+      "id": "exploded",
+      "title": "Exploded axonometric",
+      "text": "Like a building-block manual: at the front corner the top courses come apart crate by crate, so the stack bond and the tie rods through the crates show. The roof lifts off, the steel channel, sleepers and anchors drop. Every crate is its own object.",
+      "view": "explode",
+      "visible": [
+        {
+          "layer": "Crates"
+        },
+        {
+          "layer": "Crate wall static"
+        },
+        {
+          "layer": "Crates loose"
+        },
+        {
+          "layer": "Doors"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Door frames"
+        },
+        {
+          "layer": "Door hardware"
+        },
+        {
+          "layer": "Lintels"
+        },
+        {
+          "layer": "Roof"
+        },
+        {
+          "layer": "Roof edge"
+        },
+        {
+          "layer": "Ceiling frame"
+        },
+        {
+          "layer": "Spots"
+        },
+        {
+          "layer": "Floor"
+        },
+        {
+          "layer": "Floor joists"
+        },
+        {
+          "layer": "Furniture"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Tie rods"
+        },
+        {
+          "layer": "Clamp plates"
+        }
+      ],
+      "hidden": [],
+      "highlight": [],
+      "explode": 1,
+      "annotationIds": [
+        "x-roof",
+        "x-edge",
+        "x-ceiling",
+        "x-courses",
+        "x-rods",
+        "x-wall",
+        "x-door",
+        "x-channel",
+        "x-sleepers"
+      ],
+      "explodeGroups": {
+        "floor": false
+      }
+    },
+    {
+      "id": "exploded-floor",
+      "title": "Exploded axonometric with floor",
+      "text": "The same, with the wall raised to show the plank floor on its joists.",
+      "view": "explode-floor",
+      "visible": [
+        {
+          "layer": "Crates"
+        },
+        {
+          "layer": "Crate wall static"
+        },
+        {
+          "layer": "Crates loose"
+        },
+        {
+          "layer": "Doors"
+        },
+        {
+          "layer": "Plinth"
+        },
+        {
+          "layer": "Door frames"
+        },
+        {
+          "layer": "Door hardware"
+        },
+        {
+          "layer": "Lintels"
+        },
+        {
+          "layer": "Roof"
+        },
+        {
+          "layer": "Roof edge"
+        },
+        {
+          "layer": "Ceiling frame"
+        },
+        {
+          "layer": "Spots"
+        },
+        {
+          "layer": "Floor"
+        },
+        {
+          "layer": "Floor joists"
+        },
+        {
+          "layer": "Furniture"
+        },
+        {
+          "layer": "Sleepers"
+        },
+        {
+          "layer": "Ground anchors"
+        },
+        {
+          "layer": "Tie rods"
+        },
+        {
+          "layer": "Clamp plates"
+        }
+      ],
+      "hidden": [],
+      "highlight": [],
+      "explode": 1,
+      "annotationIds": [
+        "fx-roof",
+        "fx-edge",
+        "fx-ceiling",
+        "fx-courses",
+        "fx-rods",
+        "fx-wall",
+        "fx-door",
+        "fx-channel",
+        "fx-sleepers",
+        "fx-floor",
+        "fx-joists"
+      ],
+      "explodeGroups": {
+        "floor": true
+      }
+    }
+  ],
+  "overviewAnnotationIds": [],
+  "exploded": [
+    {
+      "select": {
+        "layer": "Roof"
+      },
+      "offset": [
+        0,
+        6.2,
+        0
+      ],
+      "delay": 0,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Roof edge"
+      },
+      "offset": [
+        0,
+        5.5,
+        0
+      ],
+      "delay": 0.03,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "offset": [
+        0,
+        4.9,
+        0
+      ],
+      "delay": 0.06,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Spots"
+      },
+      "offset": [
+        0,
+        4.9,
+        0
+      ],
+      "delay": 0.06,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S16"
+      },
+      "offset": [
+        0,
+        0.48,
+        0
+      ],
+      "delay": 0.351,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S17"
+      },
+      "offset": [
+        0,
+        0.54,
+        0
+      ],
+      "delay": 0.3468,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S18"
+      },
+      "offset": [
+        0,
+        0.6,
+        0
+      ],
+      "delay": 0.3425,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S19"
+      },
+      "offset": [
+        0,
+        0.6599999999999999,
+        0
+      ],
+      "delay": 0.4735,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S19"
+      },
+      "offset": [
+        0,
+        1.08,
+        0
+      ],
+      "delay": 0.3383,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S20"
+      },
+      "offset": [
+        0,
+        0.72,
+        0
+      ],
+      "delay": 0.4693,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S20"
+      },
+      "offset": [
+        0,
+        1.14,
+        0
+      ],
+      "delay": 0.3341,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S21"
+      },
+      "offset": [
+        0,
+        0.78,
+        0
+      ],
+      "delay": 0.4651,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S21"
+      },
+      "offset": [
+        0,
+        1.2,
+        0
+      ],
+      "delay": 0.3299,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S22"
+      },
+      "offset": [
+        0,
+        0.84,
+        0
+      ],
+      "delay": 0.5834,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S22"
+      },
+      "offset": [
+        0,
+        1.26,
+        0
+      ],
+      "delay": 0.4608,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S22"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.3256,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S23"
+      },
+      "offset": [
+        0,
+        0.8999999999999999,
+        0
+      ],
+      "delay": 0.5792,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S23"
+      },
+      "offset": [
+        0,
+        1.3199999999999998,
+        0
+      ],
+      "delay": 0.4566,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S23"
+      },
+      "offset": [
+        0,
+        1.74,
+        0
+      ],
+      "delay": 0.3214,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S24"
+      },
+      "offset": [
+        0,
+        0.96,
+        0
+      ],
+      "delay": 0.5749,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S24"
+      },
+      "offset": [
+        0,
+        1.38,
+        0
+      ],
+      "delay": 0.4524,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S24"
+      },
+      "offset": [
+        0,
+        1.8,
+        0
+      ],
+      "delay": 0.3172,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S25"
+      },
+      "offset": [
+        0,
+        1.02,
+        0
+      ],
+      "delay": 0.6763,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S25"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.5665,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S25"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.4439,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S25"
+      },
+      "offset": [
+        0,
+        2.28,
+        0
+      ],
+      "delay": 0.3087,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S26"
+      },
+      "offset": [
+        0,
+        1.0799999999999998,
+        0
+      ],
+      "delay": 0.6679,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S26"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.558,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S26"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.4355,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S26"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.3003,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S27"
+      },
+      "offset": [
+        0,
+        1.14,
+        0
+      ],
+      "delay": 0.6594,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S27"
+      },
+      "offset": [
+        0,
+        1.56,
+        0
+      ],
+      "delay": 0.5496,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S27"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.427,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S27"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.2918,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S28"
+      },
+      "offset": [
+        0,
+        1.2,
+        0
+      ],
+      "delay": 0.7482,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S28"
+      },
+      "offset": [
+        0,
+        1.62,
+        0
+      ],
+      "delay": 0.651,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S28"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.5411,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S28"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.4186,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S28"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.2834,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S29"
+      },
+      "offset": [
+        0,
+        1.26,
+        0
+      ],
+      "delay": 0.7397,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S29"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.6425,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S29"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.5327,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S29"
+      },
+      "offset": [
+        0,
+        2.52,
+        0
+      ],
+      "delay": 0.4101,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S29"
+      },
+      "offset": [
+        0,
+        2.94,
+        0
+      ],
+      "delay": 0.2749,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S30"
+      },
+      "offset": [
+        0,
+        1.3199999999999998,
+        0
+      ],
+      "delay": 0.7313,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S30"
+      },
+      "offset": [
+        0,
+        1.7399999999999998,
+        0
+      ],
+      "delay": 0.6341,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S30"
+      },
+      "offset": [
+        0,
+        2.16,
+        0
+      ],
+      "delay": 0.5242,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S30"
+      },
+      "offset": [
+        0,
+        2.58,
+        0
+      ],
+      "delay": 0.4017,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S30"
+      },
+      "offset": [
+        0,
+        3,
+        0
+      ],
+      "delay": 0.2665,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 S31"
+      },
+      "offset": [
+        0,
+        1.38,
+        0
+      ],
+      "delay": 0.7946,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S31"
+      },
+      "offset": [
+        0,
+        1.7999999999999998,
+        0
+      ],
+      "delay": 0.7228,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S31"
+      },
+      "offset": [
+        0,
+        2.2199999999999998,
+        0
+      ],
+      "delay": 0.6256,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S31"
+      },
+      "offset": [
+        0,
+        2.6399999999999997,
+        0
+      ],
+      "delay": 0.5158,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S31"
+      },
+      "offset": [
+        0,
+        3.06,
+        0
+      ],
+      "delay": 0.3932,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S31"
+      },
+      "offset": [
+        0,
+        3.48,
+        0
+      ],
+      "delay": 0.258,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 S32"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.7862,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S32"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.7144,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S32"
+      },
+      "offset": [
+        0,
+        2.2800000000000002,
+        0
+      ],
+      "delay": 0.6172,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S32"
+      },
+      "offset": [
+        0,
+        2.7,
+        0
+      ],
+      "delay": 0.5073,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S32"
+      },
+      "offset": [
+        0,
+        3.12,
+        0
+      ],
+      "delay": 0.3848,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S32"
+      },
+      "offset": [
+        0,
+        3.54,
+        0
+      ],
+      "delay": 0.2496,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 S33"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.7777,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S33"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.7059,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S33"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.6087,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S33"
+      },
+      "offset": [
+        0,
+        2.76,
+        0
+      ],
+      "delay": 0.4989,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S33"
+      },
+      "offset": [
+        0,
+        3.18,
+        0
+      ],
+      "delay": 0.3763,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S33"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.2411,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 19 S34"
+      },
+      "offset": [
+        0,
+        1.5599999999999998,
+        0
+      ],
+      "delay": 0.8158,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 S34"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.7693,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S34"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.6975,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S34"
+      },
+      "offset": [
+        0,
+        2.82,
+        0
+      ],
+      "delay": 0.6003,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S34"
+      },
+      "offset": [
+        0,
+        3.24,
+        0
+      ],
+      "delay": 0.4904,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S34"
+      },
+      "offset": [
+        0,
+        3.66,
+        0
+      ],
+      "delay": 0.3679,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S34"
+      },
+      "offset": [
+        0,
+        4.08,
+        0
+      ],
+      "delay": 0.2327,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 19 S35"
+      },
+      "offset": [
+        0,
+        1.6199999999999999,
+        0
+      ],
+      "delay": 0.8073,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 S35"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.7608,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S35"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.689,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S35"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.5918,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S35"
+      },
+      "offset": [
+        0,
+        3.3,
+        0
+      ],
+      "delay": 0.482,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S35"
+      },
+      "offset": [
+        0,
+        3.7199999999999998,
+        0
+      ],
+      "delay": 0.3594,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S35"
+      },
+      "offset": [
+        0,
+        4.14,
+        0
+      ],
+      "delay": 0.2242,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 19 S36"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.8031,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 S36"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.7566,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 S36"
+      },
+      "offset": [
+        0,
+        2.52,
+        0
+      ],
+      "delay": 0.6848,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 S36"
+      },
+      "offset": [
+        0,
+        2.94,
+        0
+      ],
+      "delay": 0.5876,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 S36"
+      },
+      "offset": [
+        0,
+        3.3600000000000003,
+        0
+      ],
+      "delay": 0.4777,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 S36"
+      },
+      "offset": [
+        0,
+        3.7800000000000002,
+        0
+      ],
+      "delay": 0.3552,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 S36"
+      },
+      "offset": [
+        0,
+        4.2,
+        0
+      ],
+      "delay": 0.22,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 19 E00"
+      },
+      "offset": [
+        0,
+        1.6199999999999999,
+        0
+      ],
+      "delay": 0.8115,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 E00"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.7651,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E00"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.6932,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E00"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.5961,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E00"
+      },
+      "offset": [
+        0,
+        3.3,
+        0
+      ],
+      "delay": 0.4862,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E00"
+      },
+      "offset": [
+        0,
+        3.7199999999999998,
+        0
+      ],
+      "delay": 0.3637,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E00"
+      },
+      "offset": [
+        0,
+        4.14,
+        0
+      ],
+      "delay": 0.2285,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 19 E01"
+      },
+      "offset": [
+        0,
+        1.5599999999999998,
+        0
+      ],
+      "delay": 0.82,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 E01"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.7735,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E01"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.7017,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E01"
+      },
+      "offset": [
+        0,
+        2.82,
+        0
+      ],
+      "delay": 0.6045,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E01"
+      },
+      "offset": [
+        0,
+        3.24,
+        0
+      ],
+      "delay": 0.4946,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E01"
+      },
+      "offset": [
+        0,
+        3.66,
+        0
+      ],
+      "delay": 0.3721,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E01"
+      },
+      "offset": [
+        0,
+        4.08,
+        0
+      ],
+      "delay": 0.2369,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 E02"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.782,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E02"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.7101,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E02"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.613,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E02"
+      },
+      "offset": [
+        0,
+        2.76,
+        0
+      ],
+      "delay": 0.5031,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E02"
+      },
+      "offset": [
+        0,
+        3.18,
+        0
+      ],
+      "delay": 0.3806,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E02"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.2454,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 E03"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.7904,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E03"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.7186,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E03"
+      },
+      "offset": [
+        0,
+        2.2800000000000002,
+        0
+      ],
+      "delay": 0.6214,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E03"
+      },
+      "offset": [
+        0,
+        2.7,
+        0
+      ],
+      "delay": 0.5115,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E03"
+      },
+      "offset": [
+        0,
+        3.12,
+        0
+      ],
+      "delay": 0.389,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E03"
+      },
+      "offset": [
+        0,
+        3.54,
+        0
+      ],
+      "delay": 0.2538,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 20 E04"
+      },
+      "offset": [
+        0,
+        1.38,
+        0
+      ],
+      "delay": 0.7989,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E04"
+      },
+      "offset": [
+        0,
+        1.7999999999999998,
+        0
+      ],
+      "delay": 0.727,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E04"
+      },
+      "offset": [
+        0,
+        2.2199999999999998,
+        0
+      ],
+      "delay": 0.6299,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E04"
+      },
+      "offset": [
+        0,
+        2.6399999999999997,
+        0
+      ],
+      "delay": 0.52,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E04"
+      },
+      "offset": [
+        0,
+        3.06,
+        0
+      ],
+      "delay": 0.3975,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E04"
+      },
+      "offset": [
+        0,
+        3.48,
+        0
+      ],
+      "delay": 0.2623,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E05"
+      },
+      "offset": [
+        0,
+        1.3199999999999998,
+        0
+      ],
+      "delay": 0.7355,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E05"
+      },
+      "offset": [
+        0,
+        1.7399999999999998,
+        0
+      ],
+      "delay": 0.6383,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E05"
+      },
+      "offset": [
+        0,
+        2.16,
+        0
+      ],
+      "delay": 0.5285,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E05"
+      },
+      "offset": [
+        0,
+        2.58,
+        0
+      ],
+      "delay": 0.4059,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E05"
+      },
+      "offset": [
+        0,
+        3,
+        0
+      ],
+      "delay": 0.2707,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E06"
+      },
+      "offset": [
+        0,
+        1.26,
+        0
+      ],
+      "delay": 0.7439,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E06"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.6468,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E06"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.5369,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E06"
+      },
+      "offset": [
+        0,
+        2.52,
+        0
+      ],
+      "delay": 0.4144,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E06"
+      },
+      "offset": [
+        0,
+        2.94,
+        0
+      ],
+      "delay": 0.2792,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 21 E07"
+      },
+      "offset": [
+        0,
+        1.2,
+        0
+      ],
+      "delay": 0.7524,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E07"
+      },
+      "offset": [
+        0,
+        1.62,
+        0
+      ],
+      "delay": 0.6552,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E07"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.5454,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E07"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.4228,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E07"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.2876,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E08"
+      },
+      "offset": [
+        0,
+        1.14,
+        0
+      ],
+      "delay": 0.6637,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E08"
+      },
+      "offset": [
+        0,
+        1.56,
+        0
+      ],
+      "delay": 0.5538,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E08"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.4313,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E08"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.2961,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E09"
+      },
+      "offset": [
+        0,
+        1.0799999999999998,
+        0
+      ],
+      "delay": 0.6721,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E09"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.5623,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E09"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.4397,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E09"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.3045,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 22 E10"
+      },
+      "offset": [
+        0,
+        1.02,
+        0
+      ],
+      "delay": 0.6806,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 23 E10"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.5707,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 24 E10"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.4482,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates",
+        "name": "Course 25 E10"
+      },
+      "offset": [
+        0,
+        2.28,
+        0
+      ],
+      "delay": 0.313,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Plinth"
+      },
+      "offset": [
+        0,
+        -0.6,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
+        "layer": "Sleepers"
+      },
+      "offset": [
+        0,
+        -1.2,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
+        "layer": "Ground anchors"
+      },
+      "offset": [
+        0,
+        -1.9,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
+        "layer": "Crates"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Tie rods"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Clamp plates"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Door frames"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Lintels"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Doors"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Door hardware"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Spots"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Roof edge"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Roof"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Floor joists"
+      },
+      "offset": [
+        0,
+        0.9,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Floor"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Furniture"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    }
+  ],
+  "billboardVariants": {},
+  "explodeGroups": {
+    "floor": {
+      "label": "Explode the floor too",
+      "enabled": false
+    }
+  },
+  "layout": {
+    "minHeadroom": 2.1,
+    "minOverlapArea": 0.01,
+    "footingTolerance": 0.045,
+    "roles": [
+      {
+        "select": {
+          "layer": "Earth"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Gravel"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Meadow"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Crate walls"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crate wall static"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates loose"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Doors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Plinth"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door frames"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door hardware"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Lintels"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof edge"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ceiling frame"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Spots"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Tie rods"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Clamp plates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Sleepers"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ground anchors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor joists"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor"
+        },
+        "role": "deck"
+      },
+      {
+        "select": {
+          "layer": "Crate stack"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Pallet"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Furniture"
+        },
+        "role": "furniture"
+      }
+    ],
+    "allowedCrossings": []
+  },
+  "export": {
+    "width": 2400,
+    "height": 1600,
+    "transparent": false,
+    "annotations": true,
+    "quality": "high"
+  }
+}

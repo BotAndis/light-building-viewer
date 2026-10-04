@@ -1,0 +1,5879 @@
+{
+  "version": 1,
+  "title": "Light Building",
+  "subtitle": "Museum pavilion of translucent beer crates, Atelier Kempe Thill, Rotterdam 2001",
+  "models": [
+    {
+      "id": "model",
+      "file": "assets/light-building-v5.3dm",
+      "units": "m",
+      "upAxis": "Z",
+      "sourceOrigin": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        30,
+        0
+      ],
+      "scale": 1,
+      "visible": true
+    }
+  ],
+  "style": {
+    "look": "collage",
+    "background": "#e6e2e8",
+    "fill": "#e1dfe2",
+    "ink": "#50535a",
+    "accent": "#b8654c",
+    "edges": true,
+    "edgeAngle": 35,
+    "shadows": true,
+    "ground": false,
+    "annotationLayout": "labels",
+    "sunDirection": [
+      0,
+      0.5,
+      0.87
+    ],
+    "diagramLayerColors": false,
+    "pictogramLayerColors": false,
+    "wireframeTriangles": false,
+    "modePresets": {
+      "collage": {
+        "edgeWidth": 1.3
+      }
+    },
+    "atmosphere": {
+      "light": 0.66,
+      "tint": "#d3d8ec",
+      "sun": "#ffd0a6",
+      "sunStrength": 1.8,
+      "pools": [
+        {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            14.665,
+            4.985
+          ],
+          "rotation": 30,
+          "spread": 3.2,
+          "color": "#ffd6a0",
+          "intensity": 0.42,
+          "group": "Site"
+        },
+        {
+          "position": [
+            0,
+            0.17,
+            0
+          ],
+          "size": [
+            13.715,
+            4.035
+          ],
+          "rotation": 30,
+          "spread": 0.3,
+          "color": "#ffe2b8",
+          "intensity": 0.45,
+          "group": "Building"
+        }
+      ],
+      "explodeFade": 0.2,
+      "bloom": {
+        "strength": 0.6,
+        "radius": 0.85,
+        "threshold": 0.9
+      },
+      "lamps": []
+    },
+    "times": {
+      "day": {
+        "label": "Day",
+        "background": "#f8f6ed",
+        "fill": "#eeeddf",
+        "ink": "#5b6052",
+        "sunDirection": [
+          0,
+          0.75,
+          0.66
+        ],
+        "atmosphere": {
+          "light": 1,
+          "tint": "#ffffff",
+          "sunStrength": 1,
+          "pools": [],
+          "explodeFade": 0,
+          "lamps": []
+        },
+        "glow": 1,
+        "tone": 0,
+        "layers": {
+          "crate-wall-static": {
+            "color": "#ffffff",
+            "opacity": 1,
+            "glow": {
+              "color": "#ffffff",
+              "intensity": 0.32
+            }
+          },
+          "crates-loose": {
+            "color": "#ffffff",
+            "opacity": 1,
+            "glow": {
+              "color": "#ffffff",
+              "intensity": 0.32
+            }
+          },
+          "gravel": {
+            "color": "#e7e0cf",
+            "opacity": 1
+          }
+        }
+      },
+      "dusk": {
+        "label": "Dusk",
+        "glow": 1,
+        "tone": 1,
+        "layers": {}
+      },
+      "night": {
+        "label": "Night",
+        "background": "#1f2431",
+        "fill": "#2c3140",
+        "ink": "#3b4152",
+        "sunDirection": [
+          -0.35,
+          0.8,
+          0.5
+        ],
+        "atmosphere": {
+          "light": 0.2,
+          "tint": "#7f8dc4",
+          "sun": "#a9b8e8",
+          "sunStrength": 1.2,
+          "pools": [
+            {
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "size": [
+                14.665,
+                4.985
+              ],
+              "rotation": 30,
+              "spread": 3.6,
+              "color": "#ffd6a0",
+              "intensity": 0.62,
+              "group": "Site"
+            },
+            {
+              "position": [
+                0,
+                0.17,
+                0
+              ],
+              "size": [
+                13.715,
+                4.035
+              ],
+              "rotation": 30,
+              "spread": 0.3,
+              "color": "#ffe2b8",
+              "intensity": 0.55,
+              "group": "Building"
+            }
+          ],
+          "explodeFade": 0.2,
+          "bloom": {
+            "strength": 0.45,
+            "radius": 0.85,
+            "threshold": 0.75
+          },
+          "lamps": []
+        },
+        "glow": 0.85,
+        "tone": 0,
+        "layers": {
+          "gravel": {
+            "color": "#d9d2c4",
+            "opacity": 1
+          },
+          "crate-stack": {
+            "opacity": 1,
+            "glow": {
+              "color": "#ffe9c8",
+              "intensity": 0.12
+            }
+          }
+        }
+      }
+    },
+    "time": "dusk",
+    "dynamic": {
+      "enabled": false,
+      "flicker": 0.06,
+      "silhouettes": 0.85,
+      "walkers": [
+        {
+          "from": [
+            -4.225,
+            0.17,
+            3.883
+          ],
+          "to": [
+            4.386,
+            0.17,
+            -1.204
+          ],
+          "speed": 0.55,
+          "height": 1.74,
+          "phase": 0
+        },
+        {
+          "from": [
+            4.3,
+            0.17,
+            -3.753
+          ],
+          "to": [
+            -3.294,
+            0.17,
+            1.094
+          ],
+          "speed": 0.7,
+          "height": 1.66,
+          "phase": 0.35
+        },
+        {
+          "from": [
+            -2.755,
+            0.17,
+            -0.372
+          ],
+          "to": [
+            -0.636,
+            0.17,
+            2.099
+          ],
+          "speed": 0.45,
+          "height": 1.8,
+          "phase": 0.6
+        },
+        {
+          "from": [
+            1.239,
+            0.17,
+            -0.254
+          ],
+          "to": [
+            4.633,
+            0.17,
+            -4.176
+          ],
+          "speed": 0.6,
+          "height": 1.62,
+          "phase": 0.15
+        }
+      ],
+      "explode": {
+        "offset": [
+          0,
+          3.6,
+          0
+        ],
+        "delay": 0.8,
+        "group": "floor"
+      }
+    }
+  },
+  "views": [
+    {
+      "id": "axon",
+      "label": "Axon",
+      "preset": "axon",
+      "direction": [
+        1.31,
+        1,
+        0.756
+      ],
+      "target": [
+        0.43,
+        3.1,
+        1.945
+      ],
+      "height": 17.5,
+      "fov": 45
+    },
+    {
+      "id": "apart",
+      "label": "Apart",
+      "preset": "axon",
+      "direction": [
+        1.31,
+        1.05,
+        0.756
+      ],
+      "target": [
+        0.3,
+        4.4,
+        0.52
+      ],
+      "height": 21.5,
+      "fov": 45
+    }
+  ],
+  "layers": [
+    {
+      "id": "earth",
+      "label": "Earth",
+      "select": {
+        "layer": "Earth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#ded7c8",
+        "opacity": 1
+      },
+      "group": "Site"
+    },
+    {
+      "id": "gravel",
+      "label": "Gravel",
+      "select": {
+        "layer": "Gravel"
+      },
+      "visible": true,
+      "material": {
+        "color": "#efe8da",
+        "opacity": 1,
+        "texture": {
+          "pattern": "gravel",
+          "repeat": 2
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "meadow",
+      "label": "Meadow",
+      "select": {
+        "layer": "Meadow"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9edd6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "meadow",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-walls",
+      "label": "Crate walls",
+      "select": {
+        "layer": "Crate walls"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates",
+      "label": "Crates",
+      "select": {
+        "layer": "Crates"
+      },
+      "visible": false,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crate-stack",
+      "label": "Crate stack",
+      "select": {
+        "layer": "Crate stack"
+      },
+      "visible": true,
+      "material": {
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        },
+        "glow": {
+          "color": "#ffffff",
+          "intensity": 0.3
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "crate-wall-static",
+      "label": "Crate wall static",
+      "select": {
+        "layer": "Crate wall static"
+      },
+      "visible": true,
+      "material": {
+        "color": "#9a9ca0",
+        "opacity": 0.9,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        },
+        "glow": {
+          "color": "#fff6ec",
+          "intensity": 1.2,
+          "file": "textures/crate-stack-glow.png"
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "crates-loose",
+      "label": "Crates loose",
+      "select": {
+        "layer": "Crates loose"
+      },
+      "visible": true,
+      "material": {
+        "color": "#9a9ca0",
+        "opacity": 0.9,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/crate-stack-atlas.png",
+          "repeat": 1
+        },
+        "glow": {
+          "color": "#fff6ec",
+          "intensity": 1.2,
+          "file": "textures/crate-stack-glow.png"
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "pallet",
+      "label": "Pallet",
+      "select": {
+        "layer": "Pallet"
+      },
+      "visible": true,
+      "material": {
+        "color": "#cfb48e",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Site"
+    },
+    {
+      "id": "doors",
+      "label": "Doors",
+      "select": {
+        "layer": "Doors"
+      },
+      "visible": true,
+      "material": {
+        "color": "#e9cfb6",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "plinth",
+      "label": "Plinth",
+      "select": {
+        "layer": "Plinth"
+      },
+      "visible": true,
+      "material": {
+        "color": "#f0d2b4",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "assets/library/29a16d5a0b0a9d4c48a8/thick-mild-steel-corten-esilbt.jpg",
+          "repeat": 4,
+          "library": {
+            "catalog": "arch-textures",
+            "itemId": "arch-textures:9125",
+            "path": "__cdn/textures/26/7/thick-mild-steel-corten-esilbt.jpg",
+            "sha256": "29a16d5a0b0a9d4c48a8afa571e42ad4582f8fcc21d2fe8c2561fc46bbc20ea9",
+            "title": "Thick Mild steel CorTen",
+            "category": "Materials",
+            "style": "Metal",
+            "source": "Arch-Textures",
+            "license": "Arch-Textures catalog; check the brand/source terms before publishing"
+          },
+          "size": [
+            0.25,
+            0.31282586027111575
+          ]
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-frames",
+      "label": "Door frames",
+      "select": {
+        "layer": "Door frames"
+      },
+      "visible": true,
+      "material": {
+        "color": "#43423e",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "door-hardware",
+      "label": "Door hardware",
+      "select": {
+        "layer": "Door hardware"
+      },
+      "visible": true,
+      "material": {
+        "color": "#a9a8a2",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "lintels",
+      "label": "Lintels",
+      "select": {
+        "layer": "Lintels"
+      },
+      "visible": true,
+      "material": {
+        "color": "#4d4c48",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof",
+      "label": "Roof",
+      "select": {
+        "layer": "Roof"
+      },
+      "visible": true,
+      "material": {
+        "color": "#cfd2ce",
+        "opacity": 1,
+        "texture": {
+          "pattern": "none",
+          "file": "textures/roof-trapezoid.png",
+          "repeat": 1,
+          "size": [
+            0.2,
+            0.2
+          ],
+          "align": "long-axis"
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "roof-edge",
+      "label": "Roof edge",
+      "select": {
+        "layer": "Roof edge"
+      },
+      "visible": true,
+      "material": {
+        "color": "#b4b8b4",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "ceiling-frame",
+      "label": "Ceiling frame",
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "visible": true,
+      "material": {
+        "color": "#3e3e3b",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "spots",
+      "label": "Spots",
+      "select": {
+        "layer": "Spots"
+      },
+      "visible": true,
+      "material": {
+        "color": "#34342f",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor",
+      "label": "Floor",
+      "select": {
+        "layer": "Floor"
+      },
+      "visible": true,
+      "material": {
+        "color": "#9a7a5a",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "floor-joists",
+      "label": "Floor joists",
+      "select": {
+        "layer": "Floor joists"
+      },
+      "visible": false,
+      "material": {
+        "color": "#c7a57c",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "furniture",
+      "label": "Furniture",
+      "select": {
+        "layer": "Furniture"
+      },
+      "visible": true,
+      "material": {
+        "color": "#d9cdb8",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "sleepers",
+      "label": "Sleepers",
+      "select": {
+        "layer": "Sleepers"
+      },
+      "visible": false,
+      "material": {
+        "color": "#b89a76",
+        "opacity": 1,
+        "texture": {
+          "pattern": "timber",
+          "repeat": 1
+        }
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "ground-anchors",
+      "label": "Ground anchors",
+      "select": {
+        "layer": "Ground anchors"
+      },
+      "visible": false,
+      "material": {
+        "color": "#6d6e70",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "tie-rods",
+      "label": "Tie rods",
+      "select": {
+        "layer": "Tie rods"
+      },
+      "visible": false,
+      "material": {
+        "color": "#55595e",
+        "opacity": 1
+      },
+      "group": "Structure"
+    },
+    {
+      "id": "clamp-plates",
+      "label": "Clamp plates",
+      "select": {
+        "layer": "Clamp plates"
+      },
+      "visible": false,
+      "material": {
+        "color": "#7b7f84",
+        "opacity": 1
+      },
+      "group": "Structure"
+    }
+  ],
+  "billboards": [
+    {
+      "id": "grass-1a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -17.46,
+        0,
+        -2.31
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-1b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -16.96,
+        0,
+        -2.78
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-1c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -17.96,
+        0,
+        -1.85
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-2a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -11.61,
+        0,
+        -7.19
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-2b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -11.11,
+        0,
+        -7.65
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-2c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -12.11,
+        0,
+        -6.73
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-3a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -3.93,
+        0,
+        -9.89
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-3b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -3.44,
+        0,
+        -10.35
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-3c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -4.43,
+        0,
+        -9.43
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-4a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        2.34,
+        0,
+        -15.02
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-4b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        2.84,
+        0,
+        -15.48
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-4c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        1.85,
+        0,
+        -14.55
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-5a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        9.59,
+        0,
+        -17.47
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-5b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        10.09,
+        0,
+        -17.93
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-5c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        9.09,
+        0,
+        -17.01
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-6a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -7.2,
+        0,
+        -6.16
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-6b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -6.71,
+        0,
+        -6.62
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-6c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -7.7,
+        0,
+        -5.69
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-7a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -17.19,
+        0,
+        7.35
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-7b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -16.69,
+        0,
+        6.88
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-7c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -17.69,
+        0,
+        7.81
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-8a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -11.1,
+        0,
+        15.49
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-8b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -10.6,
+        0,
+        15.03
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-8c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -11.6,
+        0,
+        15.96
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-9a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        12.21,
+        0,
+        -11.94
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-9b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        12.7,
+        0,
+        -12.4
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-9c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        11.71,
+        0,
+        -11.47
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-10a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        -7.95,
+        0,
+        11.36
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-10b",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        -7.45,
+        0,
+        10.9
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-10c",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        -8.44,
+        0,
+        11.82
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-11a",
+      "file": "plants/grass-meadow-29204.svg",
+      "position": [
+        19.39,
+        0,
+        -4.89
+      ],
+      "width": 1.72,
+      "height": 0.42,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        0,
+        80,
+        900,
+        220
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:meadow:muted:29204",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-meadow-29204.svg",
+        "sha256": "343cabceb6dfe353769e36ca65c0929c247b52f97162802e8756cea9519832c3",
+        "title": "Three-Vis meadow grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-11b",
+      "file": "plants/grass-tuft-35303.svg",
+      "position": [
+        19.89,
+        0,
+        -5.35
+      ],
+      "width": 1.21,
+      "height": 0.62,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:35303",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-35303.svg",
+        "sha256": "15dcc9013aad89f5ec794616b7cdb709938de704cdea7ba8fa481ec960785328",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "grass-11c",
+      "file": "plants/grass-tuft-27384.svg",
+      "position": [
+        18.9,
+        0,
+        -4.42
+      ],
+      "width": 0.97,
+      "height": 0.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "planting",
+      "crop": [
+        30,
+        120,
+        545,
+        280
+      ],
+      "library": {
+        "catalog": "three-vis-generated",
+        "itemId": "three-vis:grass:tuft:muted:27384",
+        "path": "batches/vegetation-muted-seed-84-count-2/Plants/Flat-Color/muted/grass-tuft-27384.svg",
+        "sha256": "cb5b353e2f4590a46d138f49b8bd22ec085ccb9fbb67a0c1b0785f2647729b14",
+        "title": "Three-Vis tuft grass (muted)",
+        "category": "Plants",
+        "style": "Flat-Color",
+        "source": "Three-Vis vegetation generator",
+        "license": "Generated by Three-Vis"
+      },
+      "shadow": false
+    },
+    {
+      "id": "tree-poplar-1",
+      "file": "trees/poplar-muted-7.svg",
+      "planFile": "trees/poplar-muted-7-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 9.86,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-1",
+      "file": "trees/a-poplar-7.svg",
+      "planFile": "trees/a-poplar-7-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 9.86,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-1",
+      "file": "trees/b-lime-5.svg",
+      "planFile": "trees/b-lime-5-plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 11.63,
+      "height": 14.45,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-1",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--1-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--1--plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 7.73,
+      "height": 16.15,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00867",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(1).png",
+        "sha256": "db1b2502d8cf631390beb9561bd16b332cb5b0edcf16959f616306e6d2c263f5",
+        "title": "Bilder wasserfarben / Tree (1)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-1",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10--plan.svg",
+      "position": [
+        -17.624,
+        0,
+        -2.526
+      ],
+      "width": 7.97,
+      "height": 10.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00918",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(10).png",
+        "sha256": "61d3e4d442b75e07ff5f0f9d257d0bc43a8f8bb9b706d3bb21cf116e39d6405e",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-2",
+      "file": "trees/poplar-muted-11.svg",
+      "planFile": "trees/poplar-muted-11-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.13,
+      "height": 19,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-2",
+      "file": "trees/a-poplar-11.svg",
+      "planFile": "trees/a-poplar-11-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.13,
+      "height": 19,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-2",
+      "file": "trees/b-hornbeam-6.svg",
+      "planFile": "trees/b-hornbeam-6-plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 8.28,
+      "height": 15.58,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-2",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--4-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--4--plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 12.93,
+      "height": 18.05,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00875",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(4).png",
+        "sha256": "129eb3cdb941b84a1ca182ff828e09227eec008e9e244ced73fb7ced00fe9f2d",
+        "title": "Bilder wasserfarben / Tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-2",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4--plan.svg",
+      "position": [
+        -11.779,
+        0,
+        -7.402
+      ],
+      "width": 7.42,
+      "height": 11.4,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00923",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(4).png",
+        "sha256": "7c476bf3ef13e2f2f37a565521bf513bc89633cba9b1a01d0bc037f37184ec42",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-3",
+      "file": "trees/poplar-muted-19.svg",
+      "planFile": "trees/poplar-muted-19-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 11.01,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-3",
+      "file": "trees/a-poplar-19.svg",
+      "planFile": "trees/a-poplar-19-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 11.01,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-3",
+      "file": "trees/b-lime-13.svg",
+      "planFile": "trees/b-lime-13-plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 13.36,
+      "height": 15.3,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-3",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--2-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--2--plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 6.65,
+      "height": 17.1,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00873",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(2).png",
+        "sha256": "dbf6031ee0b28270ce6b3283b9dec1bee377a32ffe3d8a688ff00beb8b867316",
+        "title": "Bilder wasserfarben / Tree (2)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-3",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5--plan.svg",
+      "position": [
+        -4.101,
+        0,
+        -10.103
+      ],
+      "width": 5.25,
+      "height": 10.8,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00924",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(5).png",
+        "sha256": "ab54bb6873c49f7b0813b66462f25d43387dcffa078df1c8fc6207860f3a4686",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (5)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-4",
+      "file": "trees/poplar-muted-23.svg",
+      "planFile": "trees/poplar-muted-23-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.81,
+      "height": 17.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-4",
+      "file": "trees/a-poplar-23.svg",
+      "planFile": "trees/a-poplar-23-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.81,
+      "height": 17.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-4",
+      "file": "trees/b-oak-4.svg",
+      "planFile": "trees/b-oak-4-plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 12.08,
+      "height": 9.63,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-4",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--10-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--10--plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 10.46,
+      "height": 16.63,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00868",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(10).png",
+        "sha256": "7ef1c6d9e497afa094efa322e2dbe8f0e12b7b75aaef9c888eb9c1f4c53de779",
+        "title": "Bilder wasserfarben / Tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-4",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7--plan.svg",
+      "position": [
+        2.177,
+        0,
+        -15.229
+      ],
+      "width": 6.41,
+      "height": 10.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00926",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(7).png",
+        "sha256": "ecb75a1a4c04993a49a92d9ef20a2598ce03c7781b7cd7475b4f3ba58ff47ed1",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (7)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-5",
+      "file": "trees/poplar-muted-3.svg",
+      "planFile": "trees/poplar-muted-3-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 10.2,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-5",
+      "file": "trees/a-poplar-3.svg",
+      "planFile": "trees/a-poplar-3-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 10.2,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-5",
+      "file": "trees/b-hornbeam-12.svg",
+      "planFile": "trees/b-hornbeam-12-plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 6.14,
+      "height": 13.12,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-5",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--3-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--3--plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 8.94,
+      "height": 15.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00874",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(3).png",
+        "sha256": "95c1c81ad10ff86d43c97b842e65139d3a3544a64239936ac7372c184203eb37",
+        "title": "Bilder wasserfarben / Tree (3)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-5",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12--plan.svg",
+      "position": [
+        9.422,
+        0,
+        -17.68
+      ],
+      "width": 2.75,
+      "height": 9.6,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00920",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(12).png",
+        "sha256": "70c29788847b536db0a7bdf398165c961916447b5683e1cc0b73ac54f34bba93",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (12)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-6",
+      "file": "trees/poplar-muted-31.svg",
+      "planFile": "trees/poplar-muted-31-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 10.19,
+      "height": 16.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-6",
+      "file": "trees/a-poplar-31.svg",
+      "planFile": "trees/a-poplar-31-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 10.19,
+      "height": 16.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-6",
+      "file": "trees/b-oak-9.svg",
+      "planFile": "trees/b-oak-9-plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 11.15,
+      "height": 9.08,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-6",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--1-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--1--plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 7.51,
+      "height": 15.67,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00867",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(1).png",
+        "sha256": "db1b2502d8cf631390beb9561bd16b332cb5b0edcf16959f616306e6d2c263f5",
+        "title": "Bilder wasserfarben / Tree (1)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-6",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10--plan.svg",
+      "position": [
+        -7.371,
+        0,
+        -6.367
+      ],
+      "width": 7.74,
+      "height": 9.9,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00918",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(10).png",
+        "sha256": "61d3e4d442b75e07ff5f0f9d257d0bc43a8f8bb9b706d3bb21cf116e39d6405e",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-7",
+      "file": "trees/poplar-muted-19.svg",
+      "planFile": "trees/poplar-muted-19-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 10.4,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-7",
+      "file": "trees/a-poplar-19.svg",
+      "planFile": "trees/a-poplar-19-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 10.4,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-7",
+      "file": "trees/b-lime-5.svg",
+      "planFile": "trees/b-lime-5-plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 11.63,
+      "height": 14.45,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-7",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--4-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--4--plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 11.57,
+      "height": 16.15,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00875",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(4).png",
+        "sha256": "129eb3cdb941b84a1ca182ff828e09227eec008e9e244ced73fb7ced00fe9f2d",
+        "title": "Bilder wasserfarben / Tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-7",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--4--plan.svg",
+      "position": [
+        -17.358,
+        0,
+        7.135
+      ],
+      "width": 6.64,
+      "height": 10.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00923",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(4).png",
+        "sha256": "7c476bf3ef13e2f2f37a565521bf513bc89633cba9b1a01d0bc037f37184ec42",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (4)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-8",
+      "file": "trees/poplar-muted-11.svg",
+      "planFile": "trees/poplar-muted-11-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 9.89,
+      "height": 15.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-8",
+      "file": "trees/a-poplar-11.svg",
+      "planFile": "trees/a-poplar-11-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 9.89,
+      "height": 15.5,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-8",
+      "file": "trees/b-hornbeam-6.svg",
+      "planFile": "trees/b-hornbeam-6-plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 6.76,
+      "height": 12.71,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-8",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--2-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--2--plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 5.72,
+      "height": 14.72,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00873",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(2).png",
+        "sha256": "dbf6031ee0b28270ce6b3283b9dec1bee377a32ffe3d8a688ff00beb8b867316",
+        "title": "Bilder wasserfarben / Tree (2)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-8",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--5--plan.svg",
+      "position": [
+        -11.269,
+        0,
+        15.282
+      ],
+      "width": 4.52,
+      "height": 9.3,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00924",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(5).png",
+        "sha256": "ab54bb6873c49f7b0813b66462f25d43387dcffa078df1c8fc6207860f3a4686",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (5)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-9",
+      "file": "trees/poplar-muted-7.svg",
+      "planFile": "trees/poplar-muted-7-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.28,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-9",
+      "file": "trees/a-poplar-7.svg",
+      "planFile": "trees/a-poplar-7-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.28,
+      "height": 16,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-9",
+      "file": "trees/b-lime-13.svg",
+      "planFile": "trees/b-lime-13-plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 11.88,
+      "height": 13.6,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-9",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--10-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--10--plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 9.56,
+      "height": 15.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00868",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(10).png",
+        "sha256": "7ef1c6d9e497afa094efa322e2dbe8f0e12b7b75aaef9c888eb9c1f4c53de779",
+        "title": "Bilder wasserfarben / Tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-9",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--7--plan.svg",
+      "position": [
+        12.039,
+        0,
+        -12.147
+      ],
+      "width": 5.86,
+      "height": 9.6,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00926",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(7).png",
+        "sha256": "ecb75a1a4c04993a49a92d9ef20a2598ce03c7781b7cd7475b4f3ba58ff47ed1",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (7)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-10",
+      "file": "trees/poplar-muted-23.svg",
+      "planFile": "trees/poplar-muted-23-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 11.12,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-10",
+      "file": "trees/a-poplar-23.svg",
+      "planFile": "trees/a-poplar-23-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 11.12,
+      "height": 18,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-10",
+      "file": "trees/b-oak-4.svg",
+      "planFile": "trees/b-oak-4-plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 12.42,
+      "height": 9.9,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-10",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--3-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--3--plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 10.05,
+      "height": 17.1,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00874",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(3).png",
+        "sha256": "95c1c81ad10ff86d43c97b842e65139d3a3544a64239936ac7372c184203eb37",
+        "title": "Bilder wasserfarben / Tree (3)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-10",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--12--plan.svg",
+      "position": [
+        -8.112,
+        0,
+        11.15
+      ],
+      "width": 3.09,
+      "height": 10.8,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00920",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(12).png",
+        "sha256": "70c29788847b536db0a7bdf398165c961916447b5683e1cc0b73ac54f34bba93",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (12)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "tree-poplar-11",
+      "file": "trees/poplar-muted-31.svg",
+      "planFile": "trees/poplar-muted-31-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 10.5,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "poplar",
+      "tone": {
+        "ramp": [
+          "#a3a89c",
+          "#b4c5ad",
+          "#cddbc4",
+          "#e4ecd9"
+        ],
+        "strength": 0.75,
+        "range": [
+          0.02,
+          0.45
+        ]
+      }
+    },
+    {
+      "id": "tree-a-11",
+      "file": "trees/a-poplar-31.svg",
+      "planFile": "trees/a-poplar-31-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 10.5,
+      "height": 17,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "a"
+    },
+    {
+      "id": "tree-b-11",
+      "file": "trees/b-hornbeam-12.svg",
+      "planFile": "trees/b-hornbeam-12-plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 6.53,
+      "height": 13.94,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "shadow": true,
+      "variant": "b"
+    },
+    {
+      "id": "tree-c-11",
+      "file": "trees/library/c-Bilder-wasserfarben-Tree--1-.png",
+      "planFile": "trees/library/c-Bilder-wasserfarben-Tree--1--plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 7.73,
+      "height": 16.15,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00867",
+        "path": "Collected_Library/Plants/Painterly/Bilder-wasserfarben__Tree-(1).png",
+        "sha256": "db1b2502d8cf631390beb9561bd16b332cb5b0edcf16959f616306e6d2c263f5",
+        "title": "Bilder wasserfarben / Tree (1)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "c"
+    },
+    {
+      "id": "tree-d-11",
+      "file": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10-.png",
+      "planFile": "trees/library/d-cute-tree-illustration-element-2024-03-05-20-59-17-utc-tree--10--plan.svg",
+      "position": [
+        19.228,
+        0,
+        -5.097
+      ],
+      "width": 7.97,
+      "height": 10.2,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "tree",
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00918",
+        "path": "Collected_Library/Plants/Painterly/cute-tree-illustration-element-2024-03-05-20-59-17-utc__tree-(10).png",
+        "sha256": "61d3e4d442b75e07ff5f0f9d257d0bc43a8f8bb9b706d3bb21cf116e39d6405e",
+        "title": "cute tree illustration element 2024 03 05 20 59 17 utc / tree (10)",
+        "category": "Plants",
+        "style": "Painterly",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "variant": "d"
+    },
+    {
+      "id": "person-a",
+      "file": "assets/library/08f63c6ac507423d07bd/HUAJJE_studioalternativi__huajje-021.png",
+      "position": [
+        1.021,
+        0,
+        3.568
+      ],
+      "width": 0.6532886356017432,
+      "height": 1.72,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        764,
+        165,
+        1133,
+        2983
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00721",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-021.png",
+        "sha256": "08f63c6ac507423d07bd27206782cad5d93fd0e8fd0b611dbde34bf8ce85c397",
+        "title": "HUAJJE_studioalternativi / huajje 021",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true
+    },
+    {
+      "id": "person-b",
+      "file": "assets/library/cbd49444b2b80b5dafd0/HUAJJE_studioalternativi__huajje-006.png",
+      "position": [
+        4.072,
+        0,
+        3.653
+      ],
+      "width": 0.7132193958664547,
+      "height": 1.66,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        638,
+        394,
+        1081,
+        2516
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00706",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-006.png",
+        "sha256": "cbd49444b2b80b5dafd04c09d5c9088e149653c333e2b79c742dda260a05355a",
+        "title": "HUAJJE_studioalternativi / huajje 006",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0293,
+          0.65
+        ]
+      }
+    },
+    {
+      "id": "person-c",
+      "file": "assets/library/13485aa1a615a9884970/HUAJJE_studioalternativi__huajje-020.png",
+      "position": [
+        8.75,
+        0,
+        -4.244
+      ],
+      "width": 0.8688759822343696,
+      "height": 1.7,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        369,
+        239,
+        1496,
+        2927
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00720",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi__huajje-020.png",
+        "sha256": "13485aa1a615a98849704c4dc3421c01b01e542b08e2b34234eda058d2071943",
+        "title": "HUAJJE_studioalternativi / huajje 020",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0,
+          0.3205
+        ]
+      }
+    },
+    {
+      "id": "person-d",
+      "file": "assets/library/c72e4d20c1b33015263e/HUAJJE_studioalternativi_C2__C2_huajje1.png",
+      "position": [
+        -1.65,
+        0,
+        8.343
+      ],
+      "width": 0.6006362672322375,
+      "height": 1.8,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        813,
+        351,
+        944,
+        2829
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00059",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi_C2__C2_huajje1.png",
+        "sha256": "c72e4d20c1b33015263e0b983307a4cc0f6b2868bc32cad396174ddbe182e573",
+        "title": "HUAJJE_studioalternativi_C2 / C2_huajje1",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0159,
+          0.1734
+        ]
+      }
+    },
+    {
+      "id": "person-e",
+      "file": "assets/library/b201ecf6202002afae80/HUAJJE_studioalternativi_C2__C2_huajje12.png",
+      "position": [
+        -0.93,
+        0,
+        8.389
+      ],
+      "width": 0.6331867388362652,
+      "height": 1.7,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        710,
+        217,
+        1101,
+        2956
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00062",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi_C2__C2_huajje12.png",
+        "sha256": "b201ecf6202002afae80550d90f621ee22f612fddab82288d8a9e0f66a92bd49",
+        "title": "HUAJJE_studioalternativi_C2 / C2_huajje12",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0,
+          0.8934
+        ]
+      }
+    },
+    {
+      "id": "person-f",
+      "file": "assets/library/a13dad9e430db6fc01f2/HUAJJE_studioalternativi_C2__C2_huajje5.png",
+      "position": [
+        8.284,
+        0,
+        5.148
+      ],
+      "width": 0.5557147826086956,
+      "height": 1.68,
+      "facing": "vertical",
+      "rotation": 0,
+      "opacity": 1,
+      "kind": "person",
+      "crop": [
+        881,
+        310,
+        951,
+        2875
+      ],
+      "library": {
+        "catalog": "staffage-collected",
+        "itemId": "collected:item:f00069",
+        "path": "Collected_Library/Humans/Flat-Color/HUAJJE_studioalternativi_C2__C2_huajje5.png",
+        "sha256": "a13dad9e430db6fc01f278bd97771705fbff7f632ef267179cea2584a271e571",
+        "title": "HUAJJE_studioalternativi_C2 / C2_huajje5",
+        "category": "Humans",
+        "style": "Flat-Color",
+        "source": "Collected",
+        "license": "See preserved source documentation"
+      },
+      "shadow": true,
+      "tone": {
+        "ramp": [
+          "#563c29",
+          "#956949",
+          "#a27350",
+          "#a37451",
+          "#b8896a"
+        ],
+        "strength": 0.35,
+        "range": [
+          0.0072,
+          0.5051
+        ]
+      }
+    }
+  ],
+  "scatter": [
+    {
+      "id": "lawn",
+      "on": {
+        "layer": "Meadow"
+      },
+      "avoid": [],
+      "density": 30,
+      "mix": [
+        {
+          "plant": "grass",
+          "weight": 8,
+          "height": [
+            0.12,
+            0.3
+          ]
+        },
+        {
+          "plant": "grass",
+          "weight": 3,
+          "height": [
+            0.1,
+            0.22
+          ],
+          "color": "#a3b37e"
+        },
+        {
+          "plant": "daisy",
+          "weight": 0.5,
+          "height": [
+            0.08,
+            0.16
+          ]
+        },
+        {
+          "plant": "sprinkle",
+          "weight": 0.4,
+          "height": [
+            0.08,
+            0.14
+          ]
+        }
+      ],
+      "drift": 3,
+      "margin": 0.2,
+      "seed": 3,
+      "maxCount": 60000,
+      "scale": 1,
+      "opacity": 1,
+      "adaptive": false
+    }
+  ],
+  "annotations": [],
+  "steps": [],
+  "exploded": [
+    {
+      "select": {
+        "layer": "Roof"
+      },
+      "offset": [
+        0,
+        6.2,
+        0
+      ],
+      "delay": 0,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Roof edge"
+      },
+      "offset": [
+        0,
+        5.5,
+        0
+      ],
+      "delay": 0.03,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "offset": [
+        0,
+        4.9,
+        0
+      ],
+      "delay": 0.06,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Spots"
+      },
+      "offset": [
+        0,
+        4.9,
+        0
+      ],
+      "delay": 0.06,
+      "duration": 0.16
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S16"
+      },
+      "offset": [
+        0,
+        0.48,
+        0
+      ],
+      "delay": 0.351,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S17"
+      },
+      "offset": [
+        0,
+        0.54,
+        0
+      ],
+      "delay": 0.3468,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S18"
+      },
+      "offset": [
+        0,
+        0.6,
+        0
+      ],
+      "delay": 0.3425,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S19"
+      },
+      "offset": [
+        0,
+        0.6599999999999999,
+        0
+      ],
+      "delay": 0.4735,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S19"
+      },
+      "offset": [
+        0,
+        1.08,
+        0
+      ],
+      "delay": 0.3383,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S20"
+      },
+      "offset": [
+        0,
+        0.72,
+        0
+      ],
+      "delay": 0.4693,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S20"
+      },
+      "offset": [
+        0,
+        1.14,
+        0
+      ],
+      "delay": 0.3341,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S21"
+      },
+      "offset": [
+        0,
+        0.78,
+        0
+      ],
+      "delay": 0.4651,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S21"
+      },
+      "offset": [
+        0,
+        1.2,
+        0
+      ],
+      "delay": 0.3299,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S22"
+      },
+      "offset": [
+        0,
+        0.84,
+        0
+      ],
+      "delay": 0.5834,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S22"
+      },
+      "offset": [
+        0,
+        1.26,
+        0
+      ],
+      "delay": 0.4608,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S22"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.3256,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S23"
+      },
+      "offset": [
+        0,
+        0.8999999999999999,
+        0
+      ],
+      "delay": 0.5792,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S23"
+      },
+      "offset": [
+        0,
+        1.3199999999999998,
+        0
+      ],
+      "delay": 0.4566,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S23"
+      },
+      "offset": [
+        0,
+        1.74,
+        0
+      ],
+      "delay": 0.3214,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S24"
+      },
+      "offset": [
+        0,
+        0.96,
+        0
+      ],
+      "delay": 0.5749,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S24"
+      },
+      "offset": [
+        0,
+        1.38,
+        0
+      ],
+      "delay": 0.4524,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S24"
+      },
+      "offset": [
+        0,
+        1.8,
+        0
+      ],
+      "delay": 0.3172,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S25"
+      },
+      "offset": [
+        0,
+        1.02,
+        0
+      ],
+      "delay": 0.6763,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S25"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.5665,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S25"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.4439,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S25"
+      },
+      "offset": [
+        0,
+        2.28,
+        0
+      ],
+      "delay": 0.3087,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S26"
+      },
+      "offset": [
+        0,
+        1.0799999999999998,
+        0
+      ],
+      "delay": 0.6679,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S26"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.558,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S26"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.4355,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S26"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.3003,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S27"
+      },
+      "offset": [
+        0,
+        1.14,
+        0
+      ],
+      "delay": 0.6594,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S27"
+      },
+      "offset": [
+        0,
+        1.56,
+        0
+      ],
+      "delay": 0.5496,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S27"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.427,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S27"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.2918,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S28"
+      },
+      "offset": [
+        0,
+        1.2,
+        0
+      ],
+      "delay": 0.7482,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S28"
+      },
+      "offset": [
+        0,
+        1.62,
+        0
+      ],
+      "delay": 0.651,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S28"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.5411,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S28"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.4186,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S28"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.2834,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S29"
+      },
+      "offset": [
+        0,
+        1.26,
+        0
+      ],
+      "delay": 0.7397,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S29"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.6425,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S29"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.5327,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S29"
+      },
+      "offset": [
+        0,
+        2.52,
+        0
+      ],
+      "delay": 0.4101,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S29"
+      },
+      "offset": [
+        0,
+        2.94,
+        0
+      ],
+      "delay": 0.2749,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S30"
+      },
+      "offset": [
+        0,
+        1.3199999999999998,
+        0
+      ],
+      "delay": 0.7313,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S30"
+      },
+      "offset": [
+        0,
+        1.7399999999999998,
+        0
+      ],
+      "delay": 0.6341,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S30"
+      },
+      "offset": [
+        0,
+        2.16,
+        0
+      ],
+      "delay": 0.5242,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S30"
+      },
+      "offset": [
+        0,
+        2.58,
+        0
+      ],
+      "delay": 0.4017,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S30"
+      },
+      "offset": [
+        0,
+        3,
+        0
+      ],
+      "delay": 0.2665,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 S31"
+      },
+      "offset": [
+        0,
+        1.38,
+        0
+      ],
+      "delay": 0.7946,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S31"
+      },
+      "offset": [
+        0,
+        1.7999999999999998,
+        0
+      ],
+      "delay": 0.7228,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S31"
+      },
+      "offset": [
+        0,
+        2.2199999999999998,
+        0
+      ],
+      "delay": 0.6256,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S31"
+      },
+      "offset": [
+        0,
+        2.6399999999999997,
+        0
+      ],
+      "delay": 0.5158,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S31"
+      },
+      "offset": [
+        0,
+        3.06,
+        0
+      ],
+      "delay": 0.3932,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S31"
+      },
+      "offset": [
+        0,
+        3.48,
+        0
+      ],
+      "delay": 0.258,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 S32"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.7862,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S32"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.7144,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S32"
+      },
+      "offset": [
+        0,
+        2.2800000000000002,
+        0
+      ],
+      "delay": 0.6172,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S32"
+      },
+      "offset": [
+        0,
+        2.7,
+        0
+      ],
+      "delay": 0.5073,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S32"
+      },
+      "offset": [
+        0,
+        3.12,
+        0
+      ],
+      "delay": 0.3848,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S32"
+      },
+      "offset": [
+        0,
+        3.54,
+        0
+      ],
+      "delay": 0.2496,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 S33"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.7777,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S33"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.7059,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S33"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.6087,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S33"
+      },
+      "offset": [
+        0,
+        2.76,
+        0
+      ],
+      "delay": 0.4989,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S33"
+      },
+      "offset": [
+        0,
+        3.18,
+        0
+      ],
+      "delay": 0.3763,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S33"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.2411,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 19 S34"
+      },
+      "offset": [
+        0,
+        1.5599999999999998,
+        0
+      ],
+      "delay": 0.8158,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 S34"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.7693,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S34"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.6975,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S34"
+      },
+      "offset": [
+        0,
+        2.82,
+        0
+      ],
+      "delay": 0.6003,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S34"
+      },
+      "offset": [
+        0,
+        3.24,
+        0
+      ],
+      "delay": 0.4904,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S34"
+      },
+      "offset": [
+        0,
+        3.66,
+        0
+      ],
+      "delay": 0.3679,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S34"
+      },
+      "offset": [
+        0,
+        4.08,
+        0
+      ],
+      "delay": 0.2327,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 19 S35"
+      },
+      "offset": [
+        0,
+        1.6199999999999999,
+        0
+      ],
+      "delay": 0.8073,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 S35"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.7608,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S35"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.689,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S35"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.5918,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S35"
+      },
+      "offset": [
+        0,
+        3.3,
+        0
+      ],
+      "delay": 0.482,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S35"
+      },
+      "offset": [
+        0,
+        3.7199999999999998,
+        0
+      ],
+      "delay": 0.3594,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S35"
+      },
+      "offset": [
+        0,
+        4.14,
+        0
+      ],
+      "delay": 0.2242,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 19 S36"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.8031,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 S36"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.7566,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 S36"
+      },
+      "offset": [
+        0,
+        2.52,
+        0
+      ],
+      "delay": 0.6848,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 S36"
+      },
+      "offset": [
+        0,
+        2.94,
+        0
+      ],
+      "delay": 0.5876,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 S36"
+      },
+      "offset": [
+        0,
+        3.3600000000000003,
+        0
+      ],
+      "delay": 0.4777,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 S36"
+      },
+      "offset": [
+        0,
+        3.7800000000000002,
+        0
+      ],
+      "delay": 0.3552,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 S36"
+      },
+      "offset": [
+        0,
+        4.2,
+        0
+      ],
+      "delay": 0.22,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 19 E00"
+      },
+      "offset": [
+        0,
+        1.6199999999999999,
+        0
+      ],
+      "delay": 0.8115,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 E00"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.7651,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E00"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.6932,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E00"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.5961,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E00"
+      },
+      "offset": [
+        0,
+        3.3,
+        0
+      ],
+      "delay": 0.4862,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E00"
+      },
+      "offset": [
+        0,
+        3.7199999999999998,
+        0
+      ],
+      "delay": 0.3637,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E00"
+      },
+      "offset": [
+        0,
+        4.14,
+        0
+      ],
+      "delay": 0.2285,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 19 E01"
+      },
+      "offset": [
+        0,
+        1.5599999999999998,
+        0
+      ],
+      "delay": 0.82,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 E01"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.7735,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E01"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.7017,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E01"
+      },
+      "offset": [
+        0,
+        2.82,
+        0
+      ],
+      "delay": 0.6045,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E01"
+      },
+      "offset": [
+        0,
+        3.24,
+        0
+      ],
+      "delay": 0.4946,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E01"
+      },
+      "offset": [
+        0,
+        3.66,
+        0
+      ],
+      "delay": 0.3721,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E01"
+      },
+      "offset": [
+        0,
+        4.08,
+        0
+      ],
+      "delay": 0.2369,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 E02"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.782,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E02"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.7101,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E02"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.613,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E02"
+      },
+      "offset": [
+        0,
+        2.76,
+        0
+      ],
+      "delay": 0.5031,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E02"
+      },
+      "offset": [
+        0,
+        3.18,
+        0
+      ],
+      "delay": 0.3806,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E02"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.2454,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 E03"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.7904,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E03"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.7186,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E03"
+      },
+      "offset": [
+        0,
+        2.2800000000000002,
+        0
+      ],
+      "delay": 0.6214,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E03"
+      },
+      "offset": [
+        0,
+        2.7,
+        0
+      ],
+      "delay": 0.5115,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E03"
+      },
+      "offset": [
+        0,
+        3.12,
+        0
+      ],
+      "delay": 0.389,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E03"
+      },
+      "offset": [
+        0,
+        3.54,
+        0
+      ],
+      "delay": 0.2538,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 20 E04"
+      },
+      "offset": [
+        0,
+        1.38,
+        0
+      ],
+      "delay": 0.7989,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E04"
+      },
+      "offset": [
+        0,
+        1.7999999999999998,
+        0
+      ],
+      "delay": 0.727,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E04"
+      },
+      "offset": [
+        0,
+        2.2199999999999998,
+        0
+      ],
+      "delay": 0.6299,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E04"
+      },
+      "offset": [
+        0,
+        2.6399999999999997,
+        0
+      ],
+      "delay": 0.52,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E04"
+      },
+      "offset": [
+        0,
+        3.06,
+        0
+      ],
+      "delay": 0.3975,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E04"
+      },
+      "offset": [
+        0,
+        3.48,
+        0
+      ],
+      "delay": 0.2623,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E05"
+      },
+      "offset": [
+        0,
+        1.3199999999999998,
+        0
+      ],
+      "delay": 0.7355,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E05"
+      },
+      "offset": [
+        0,
+        1.7399999999999998,
+        0
+      ],
+      "delay": 0.6383,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E05"
+      },
+      "offset": [
+        0,
+        2.16,
+        0
+      ],
+      "delay": 0.5285,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E05"
+      },
+      "offset": [
+        0,
+        2.58,
+        0
+      ],
+      "delay": 0.4059,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E05"
+      },
+      "offset": [
+        0,
+        3,
+        0
+      ],
+      "delay": 0.2707,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E06"
+      },
+      "offset": [
+        0,
+        1.26,
+        0
+      ],
+      "delay": 0.7439,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E06"
+      },
+      "offset": [
+        0,
+        1.68,
+        0
+      ],
+      "delay": 0.6468,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E06"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.5369,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E06"
+      },
+      "offset": [
+        0,
+        2.52,
+        0
+      ],
+      "delay": 0.4144,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E06"
+      },
+      "offset": [
+        0,
+        2.94,
+        0
+      ],
+      "delay": 0.2792,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 21 E07"
+      },
+      "offset": [
+        0,
+        1.2,
+        0
+      ],
+      "delay": 0.7524,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E07"
+      },
+      "offset": [
+        0,
+        1.62,
+        0
+      ],
+      "delay": 0.6552,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E07"
+      },
+      "offset": [
+        0,
+        2.04,
+        0
+      ],
+      "delay": 0.5454,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E07"
+      },
+      "offset": [
+        0,
+        2.46,
+        0
+      ],
+      "delay": 0.4228,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E07"
+      },
+      "offset": [
+        0,
+        2.88,
+        0
+      ],
+      "delay": 0.2876,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E08"
+      },
+      "offset": [
+        0,
+        1.14,
+        0
+      ],
+      "delay": 0.6637,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E08"
+      },
+      "offset": [
+        0,
+        1.56,
+        0
+      ],
+      "delay": 0.5538,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E08"
+      },
+      "offset": [
+        0,
+        1.98,
+        0
+      ],
+      "delay": 0.4313,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E08"
+      },
+      "offset": [
+        0,
+        2.4,
+        0
+      ],
+      "delay": 0.2961,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E09"
+      },
+      "offset": [
+        0,
+        1.0799999999999998,
+        0
+      ],
+      "delay": 0.6721,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E09"
+      },
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "delay": 0.5623,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E09"
+      },
+      "offset": [
+        0,
+        1.92,
+        0
+      ],
+      "delay": 0.4397,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E09"
+      },
+      "offset": [
+        0,
+        2.34,
+        0
+      ],
+      "delay": 0.3045,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 22 E10"
+      },
+      "offset": [
+        0,
+        1.02,
+        0
+      ],
+      "delay": 0.6806,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 23 E10"
+      },
+      "offset": [
+        0,
+        1.44,
+        0
+      ],
+      "delay": 0.5707,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 24 E10"
+      },
+      "offset": [
+        0,
+        1.8599999999999999,
+        0
+      ],
+      "delay": 0.4482,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Crates loose",
+        "name": "Course 25 E10"
+      },
+      "offset": [
+        0,
+        2.28,
+        0
+      ],
+      "delay": 0.313,
+      "duration": 0.12
+    },
+    {
+      "select": {
+        "layer": "Plinth"
+      },
+      "offset": [
+        0,
+        -0.6,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
+        "layer": "Sleepers"
+      },
+      "offset": [
+        0,
+        -1.2,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
+        "layer": "Ground anchors"
+      },
+      "offset": [
+        0,
+        -1.9,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
+        "layer": "Crate wall static"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Crates loose"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Tie rods"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Clamp plates"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Door frames"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Lintels"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Doors"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Door hardware"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Ceiling frame"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Spots"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Roof edge"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Roof"
+      },
+      "offset": [
+        0,
+        3.6,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Floor joists"
+      },
+      "offset": [
+        0,
+        0.9,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Floor"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    },
+    {
+      "select": {
+        "layer": "Furniture"
+      },
+      "offset": [
+        0,
+        2.1,
+        0
+      ],
+      "delay": 0.8,
+      "group": "floor"
+    }
+  ],
+  "billboardVariants": {
+    "poplar": {
+      "label": "First poplars"
+    },
+    "a": {
+      "label": "A Brown poplars"
+    },
+    "b": {
+      "label": "B Mixed"
+    },
+    "c": {
+      "label": "C Watercolour"
+    },
+    "d": {
+      "label": "D Pastel"
+    }
+  },
+  "variant": "a",
+  "explodeGroups": {
+    "floor": {
+      "label": "Explode the floor too",
+      "enabled": false
+    }
+  },
+  "layout": {
+    "minHeadroom": 2.1,
+    "minOverlapArea": 0.01,
+    "footingTolerance": 0.045,
+    "roles": [
+      {
+        "select": {
+          "layer": "Earth"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Gravel"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Meadow"
+        },
+        "role": "ground"
+      },
+      {
+        "select": {
+          "layer": "Crate walls"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crate wall static"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Crates loose"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Doors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Plinth"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door frames"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Door hardware"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Lintels"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Roof edge"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ceiling frame"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Spots"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Tie rods"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Clamp plates"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Sleepers"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Ground anchors"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor joists"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Floor"
+        },
+        "role": "deck"
+      },
+      {
+        "select": {
+          "layer": "Crate stack"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Pallet"
+        },
+        "role": "furniture"
+      },
+      {
+        "select": {
+          "layer": "Furniture"
+        },
+        "role": "furniture"
+      }
+    ],
+    "allowedCrossings": []
+  },
+  "export": {
+    "width": 2400,
+    "height": 1600,
+    "transparent": false,
+    "annotations": false,
+    "quality": "high"
+  }
+}
