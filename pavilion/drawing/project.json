@@ -5,7 +5,7 @@
   "models": [
     {
       "id": "model",
-      "file": "assets/light-building-v5.3dm",
+      "file": "assets/light-building-v6.3dm",
       "units": "m",
       "upAxis": "Z",
       "sourceOrigin": [
@@ -561,6 +561,19 @@
           ],
           "align": "long-axis"
         }
+      },
+      "group": "Building"
+    },
+    {
+      "id": "packing-blocks",
+      "label": "Packing blocks",
+      "select": {
+        "layer": "Packing blocks"
+      },
+      "visible": true,
+      "material": {
+        "color": "#6f5844",
+        "opacity": 1
       },
       "group": "Building"
     },
@@ -5482,6 +5495,17 @@
     },
     {
       "select": {
+        "layer": "Packing blocks"
+      },
+      "offset": [
+        0,
+        -0.9,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
         "layer": "Sleepers"
       },
       "offset": [
@@ -5769,6 +5793,12 @@
       {
         "select": {
           "layer": "Plinth"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Packing blocks"
         },
         "role": "structure"
       },

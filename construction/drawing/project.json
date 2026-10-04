@@ -5,7 +5,7 @@
   "models": [
     {
       "id": "model",
-      "file": "assets/light-building-v5.3dm",
+      "file": "assets/light-building-v6.3dm",
       "units": "m",
       "upAxis": "Z",
       "sourceOrigin": [
@@ -326,6 +326,19 @@
       "group": "Building"
     },
     {
+      "id": "packing-blocks",
+      "label": "Packing blocks",
+      "select": {
+        "layer": "Packing blocks"
+      },
+      "visible": true,
+      "material": {
+        "color": "#6f5844",
+        "opacity": 1
+      },
+      "group": "Building"
+    },
+    {
       "id": "door-frames",
       "label": "Door frames",
       "select": {
@@ -569,6 +582,21 @@
     },
     {
       "type": "label",
+      "id": "a-blocks",
+      "text": "hardwood packing blocks",
+      "point": [
+        3.798,
+        -0.02,
+        0.659
+      ],
+      "offset": [
+        50,
+        60
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
       "id": "a-floor",
       "text": "timber joists every 50 cm",
       "point": [
@@ -779,11 +807,26 @@
     },
     {
       "type": "label",
+      "id": "x-blocks",
+      "text": "hardwood packing blocks",
+      "point": [
+        7.219,
+        -0.92,
+        -1.316
+      ],
+      "offset": [
+        80,
+        20
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
       "id": "x-sleepers",
       "text": "timber sleepers + ground anchors",
       "point": [
         8.729,
-        -1.23,
+        -1.265,
         -0.802
       ],
       "offset": [
@@ -914,11 +957,26 @@
     },
     {
       "type": "label",
+      "id": "fx-blocks",
+      "text": "hardwood packing blocks",
+      "point": [
+        7.219,
+        -0.92,
+        -1.316
+      ],
+      "offset": [
+        80,
+        20
+      ],
+      "color": "#3b3f38"
+    },
+    {
+      "type": "label",
       "id": "fx-sleepers",
       "text": "timber sleepers + ground anchors",
       "point": [
         8.729,
-        -1.23,
+        -1.265,
         -0.802
       ],
       "offset": [
@@ -962,7 +1020,7 @@
     {
       "id": "s1",
       "title": "1 Foundation",
-      "text": "Timber sleepers spread the load on the gravel; driven steel anchors hold the rusty steel channel that takes the first course.",
+      "text": "Timber sleepers bedded in the gravel spread the load; hardwood packing blocks level the rusty steel channel that takes the first course, and driven V-anchors hold it down.",
       "view": "build",
       "visible": [
         {
@@ -972,6 +1030,9 @@
           "layer": "Sleepers"
         },
         {
+          "layer": "Packing blocks"
+        },
+        {
           "layer": "Plinth"
         }
       ],
@@ -979,12 +1040,16 @@
       "highlight": [
         {
           "layer": "Plinth"
+        },
+        {
+          "layer": "Packing blocks"
         }
       ],
       "explode": 0,
       "annotationIds": [
         "a-sleepers",
-        "a-channel"
+        "a-channel",
+        "a-blocks"
       ]
     },
     {
@@ -998,6 +1063,9 @@
         },
         {
           "layer": "Sleepers"
+        },
+        {
+          "layer": "Packing blocks"
         },
         {
           "layer": "Plinth"
@@ -1028,6 +1096,9 @@
         },
         {
           "layer": "Sleepers"
+        },
+        {
+          "layer": "Packing blocks"
         },
         {
           "layer": "Plinth"
@@ -1093,6 +1164,9 @@
         },
         {
           "layer": "Sleepers"
+        },
+        {
+          "layer": "Packing blocks"
         },
         {
           "layer": "Plinth"
@@ -1241,6 +1315,9 @@
           "layer": "Sleepers"
         },
         {
+          "layer": "Packing blocks"
+        },
+        {
           "layer": "Plinth"
         },
         {
@@ -1370,6 +1447,9 @@
           "layer": "Sleepers"
         },
         {
+          "layer": "Packing blocks"
+        },
+        {
           "layer": "Plinth"
         },
         {
@@ -1461,6 +1541,9 @@
           "layer": "Plinth"
         },
         {
+          "layer": "Packing blocks"
+        },
+        {
           "layer": "Door frames"
         },
         {
@@ -1515,6 +1598,7 @@
         "x-wall",
         "x-door",
         "x-channel",
+        "x-blocks",
         "x-sleepers"
       ],
       "explodeGroups": {
@@ -1544,6 +1628,9 @@
         },
         {
           "layer": "Plinth"
+        },
+        {
+          "layer": "Packing blocks"
         },
         {
           "layer": "Door frames"
@@ -1600,6 +1687,7 @@
         "fx-wall",
         "fx-door",
         "fx-channel",
+        "fx-blocks",
         "fx-sleepers",
         "fx-floor",
         "fx-joists"
@@ -3531,6 +3619,17 @@
     },
     {
       "select": {
+        "layer": "Packing blocks"
+      },
+      "offset": [
+        0,
+        -0.9,
+        0
+      ],
+      "delay": 0.8
+    },
+    {
+      "select": {
         "layer": "Sleepers"
       },
       "offset": [
@@ -3801,6 +3900,12 @@
       {
         "select": {
           "layer": "Plinth"
+        },
+        "role": "structure"
+      },
+      {
+        "select": {
+          "layer": "Packing blocks"
         },
         "role": "structure"
       },

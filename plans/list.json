@@ -1,0 +1,42 @@
+[
+ {
+  "thumb": "01-axonometrics-thumb.jpg",
+  "full": "01-axonometrics.jpg",
+  "caption": "01 Axonometrics and site"
+ },
+ {
+  "thumb": "02-floor-plan-thumb.jpg",
+  "full": "02-floor-plan.jpg",
+  "caption": "02 Floor plan, elevations, plan details"
+ },
+ {
+  "thumb": "03-section-thumb.jpg",
+  "full": "03-section.jpg",
+  "caption": "03 Section A-A and wall details"
+ },
+ {
+  "thumb": "04-perspectives-thumb.jpg",
+  "full": "04-perspectives.jpg",
+  "caption": "04 Perspectives"
+ },
+ {
+  "thumb": "05-construction-thumb.jpg",
+  "full": "05-construction.jpg",
+  "caption": "05 Exploded axonometric and construction"
+ },
+ {
+  "thumb": "06-light-thumb.jpg",
+  "full": "06-light.jpg",
+  "caption": "06 Day, dusk, night"
+ },
+ {
+  "thumb": "07-only-building-thumb.jpg",
+  "full": "07-only-building.jpg",
+  "caption": "07 Only the building"
+ },
+ {
+  "thumb": "08-ink-thumb.jpg",
+  "full": "08-ink.jpg",
+  "caption": "08 Ink axonometrics"
+ }
+]
